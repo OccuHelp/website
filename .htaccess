@@ -1,13 +1,22 @@
 # Enable URL rewriting
 RewriteEngine On
 
-# Remove .html extension
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)$ $1.html [NC,L]
+# Set the base directory
+RewriteBase /
 
-# Handle direct .html access (optional - redirects example.com/page.html to example.com/page)
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
+# Handle the root domain - serve index.html
+RewriteRule ^$ index.html [L]
+
+# Redirect /index to root domain
+RewriteRule ^index/?$ / [R=301,L]
+
+# Remove .html extension for all other pages
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# Handle direct .html access (redirects example.com/page.html to example.com/page)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html [NC]
 RewriteRule ^(.*)\.html$ /$1 [R=301,L]
 
 # Set default index page
