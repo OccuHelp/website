@@ -4,30 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="OccuHelp software streamlines injury prevention, risk reduction, 
+    <meta name="description" content="OccuHelp software streamlines injury prevention, risk reduction,
 	and occupational health to improve outcomes and mitigate workplace risks.">
     <meta name="keywords" content="Occupational Health Software, Injury Prevention, Risk Analysis">
     <meta name="author" content="OccuHelp, LLC">
 	<title>OccuHelp - Core Values</title>
 	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/consent.css">
+	<link rel="stylesheet" href="assets/css/about-additions.css">
+	<link rel="stylesheet" href="assets/css/about-pages.css">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon-32x32.ico" sizes="32x32" type="image/ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="mask-icon" href="images/icon-192-maskable.png">
-    
+
     <!-- Open Graph Meta Tags (for social sharing) -->
     <meta property="og:title" content="OccuHelp">
-    <meta property="og:description" content="OccuHelp software streamlines injury prevention, risk reduction, 
+    <meta property="og:description" content="OccuHelp software streamlines injury prevention, risk reduction,
 	and occupational health to improve outcomes and mitigate workplace risks.">
     <meta property="og:image" content="https://www.occuhelp.com/images/OH-Social.png">
     <meta property="og:url" content="https://www.occuhelp.com">
-    
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="OccuHelp">
-    <meta name="twitter:description" content="OccuHelp software streamlines injury prevention, risk reduction, 
+    <meta name="twitter:description" content="OccuHelp software streamlines injury prevention, risk reduction,
 	and occupational health to improve outcomes and mitigate workplace risks.">
     <meta name="twitter:image" content="https://www.occuhelp.com/images/OH-Social.png">
 
@@ -41,12 +44,23 @@
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', 'G-JS564X2EC0');
+		// Default consent mode - will be updated based on user choice
+		gtag('consent', 'default', {
+			'ad_storage': 'denied',
+			'analytics_storage': 'denied'
+		});
+
+		// Enhanced measurement settings
+		gtag('config', 'G-JS564X2EC0', {
+			'send_page_view': true,
+			'cookie_domain': 'occuhelp.com',
+			'anonymize_ip': true
+		});
 	</script>
 
 </head>
 
-<body class="homepage is-preload">
+<body class="subpage is-preload">
 	<div id="page-wrapper">
 
 	<!-- Header -->
@@ -74,7 +88,7 @@
 				<li><a href="services.html">Services</a></li>
 				<li><a href="faq.html">FAQ</a></li>
 				<li><a href="contact.html">Contact</a></li>
-				
+
 				<!-- Button wrapped in a list item -->
 					<li class="button-container">
 						<a href="https://app.occuhelp.com" class="button scrolly" target="_blank">Login</a>
@@ -82,10 +96,88 @@
 			</ul>
 		</nav>
 
-	<!-- Banner -->
-
-
 	<!-- Main -->
+	<section id="main">
+		<div class="container">
+			<div class="section-intro">
+				<h2>Our Core Values</h2>
+				<p>At OccuHelp, our core values guide every decision we make and every interaction we have. They're not just words on a wall—they're the principles that define our culture and drive our success.</p>
+			</div>
+
+			<div class="values-container">
+				<div class="value-card">
+					<i class="value-icon fas fa-shield-alt"></i>
+					<h3>Safety First</h3>
+					<p>We believe that everyone deserves to work in an environment where their health and safety are prioritized. This value drives our mission to create software that prevents workplace injuries and promotes wellbeing.</p>
+				</div>
+
+				<div class="value-card">
+					<i class="value-icon fas fa-lightbulb"></i>
+					<h3>Innovation</h3>
+					<p>We're committed to continuous improvement and creative problem-solving. We embrace new technologies and approaches to develop solutions that address evolving workplace safety challenges.</p>
+				</div>
+
+				<div class="value-card">
+					<i class="value-icon fas fa-chart-line"></i>
+					<h3>Data-Driven Excellence</h3>
+					<p>We believe in the power of data to drive better decisions. Our commitment to collecting, analyzing, and acting on meaningful data helps our clients achieve measurable improvements in safety outcomes.</p>
+				</div>
+
+				<div class="value-card">
+					<i class="value-icon fas fa-users"></i>
+					<h3>Collaboration</h3>
+					<p>We work closely with our clients, partners, and each other to achieve shared goals. We believe that diverse perspectives lead to better solutions and that teamwork amplifies our impact.</p>
+				</div>
+
+				<div class="value-card">
+					<i class="value-icon fas fa-handshake"></i>
+					<h3>Integrity</h3>
+					<p>We conduct business with honesty, transparency, and ethical standards. We stand behind our products and services, and we're accountable for our actions and commitments.</p>
+				</div>
+
+				<div class="value-card">
+					<i class="value-icon fas fa-heart"></i>
+					<h3>Empathy</h3>
+					<p>We understand the human impact of workplace injuries and health issues. We design our solutions with empathy for the people who use them and the workers whose lives they affect.</p>
+				</div>
+			</div>
+
+			<div class="highlight-box">
+				<h3>Living Our Values</h3>
+				<p>Our core values aren't just aspirational statements—they're reflected in our daily operations and long-term strategy:</p>
+				<ul class="check-list">
+					<li><strong>Product Development:</strong> We incorporate safety principles and user-centered design in every feature we build.</li>
+					<li><strong>Client Relationships:</strong> We collaborate closely with clients to understand their unique challenges and develop tailored solutions.</li>
+					<li><strong>Team Culture:</strong> We foster a workplace where innovation is encouraged, data informs decisions, and integrity guides interactions.</li>
+					<li><strong>Industry Leadership:</strong> We share our expertise and advocate for workplace safety best practices.</li>
+				</ul>
+			</div>
+
+			<div class="row">
+				<div class="col-6 col-12-medium">
+					<h3>Our Commitment to You</h3>
+					<p>When you work with OccuHelp, you can expect us to:</p>
+					<ul>
+						<li>Prioritize your organization's safety needs</li>
+						<li>Provide innovative solutions backed by data</li>
+						<li>Collaborate with you as a trusted partner</li>
+						<li>Act with integrity in all our dealings</li>
+						<li>Approach challenges with empathy and understanding</li>
+					</ul>
+				</div>
+				<div class="col-6 col-12-medium">
+					<span class="image featured"><img src="images/pic03.jpg" alt="OccuHelp Team Collaboration"></span>
+					<p class="image-caption">Our team collaborating on safety solutions that reflect our core values</p>
+				</div>
+			</div>
+
+			<div class="cta-box">
+				<h3>Experience our values in action</h3>
+				<p>See how our core values translate into effective workplace safety solutions for your organization.</p>
+				<a href="contact.html" class="button">Contact Us Today</a>
+			</div>
+		</div>
+	</section>
 
 
  <!-- Copyright -->
@@ -104,6 +196,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/consent.js"></script>
 
 	</div>
 </body>

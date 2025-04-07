@@ -2412,13 +2412,13 @@ input, select, textarea {
 			}
 
 			#nav li.current a {
-				background: #3c39eb;
+				background: #99d98c;
 				color: #fff;
 			}
 
 	.dropotron {
 		list-style: none;
-		background: #6B7770;
+		background: #6b7770;
 		color: #fff;
 		border-radius: 6px;
 		line-height: 2.75em;
@@ -2446,12 +2446,12 @@ input, select, textarea {
 
 			.dropotron li:hover > a, .dropotron li:hover > span {
 				color: #fff;
-				background: #7B8780;
+				background: #99d98c;
 			}
 
 			.dropotron li.active > a, .dropotron li.active > span {
 				color: #fff;
-				background: #7B8780;
+				background: #99d98c;
 			}
 
 			.dropotron li:first-child {
@@ -2469,7 +2469,7 @@ input, select, textarea {
 				left: 50%;
 				margin-left: -1em;
 				top: -0.65em;
-				border-bottom: solid 1em #6B7770;
+				border-bottom: solid 1em #6b7770;
 				border-left: solid 1em transparent;
 				border-right: solid 1em transparent;
 			}

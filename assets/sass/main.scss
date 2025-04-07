@@ -951,7 +951,7 @@
 			}
 
 			&.current a {
-				background: #b1ddab;
+				background: #99d98c;
 				color: #fff;
 			}
 		}
@@ -959,7 +959,7 @@
 
 	.dropotron {
 		list-style: none;
-		background: #6B7770;
+		background: #6b7770;
 		color: #fff;
 		border-radius: 6px;
 		line-height: 2.75em;
@@ -986,14 +986,14 @@
 			&:hover {
 				> a, > span {
 					color: #fff;
-					background: #7B8780;
+					background: #99d98c;
 				}
 			}
 
 			&.active {
 				> a, > span {
 					color: #fff;
-					background: #7B8780;
+					background: #99d98c;
 				}
 			}
 
@@ -1012,7 +1012,7 @@
 				left: 50%;
 				margin-left: -1em;
 				top: -0.65em;
-				border-bottom: solid 1em #6B7770;
+				border-bottom: solid 1em #6b7770;
 				border-left: solid 1em transparent;
 				border-right: solid 1em transparent;
 			}
@@ -1362,7 +1362,7 @@
 						position: absolute;
 						left: 0;
 						top: 0;
-						background: #b1ddab;
+						background: #99d98c;
 						width: 44px;
 						height: 44px;
 						content: '\f0c9';

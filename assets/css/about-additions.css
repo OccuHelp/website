@@ -1,0 +1,100 @@
+/* Additional styles for the About page */
+
+/* Highlight text */
+.highlight {
+    color: #99d98c;
+    font-weight: bold;
+}
+
+/* Check list */
+ul.check-list {
+    list-style: none;
+    padding-left: 1.5em;
+    margin: 0 0 2em 0;
+}
+
+ul.check-list li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.75em;
+}
+
+ul.check-list li:before {
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    color: #99d98c;
+}
+
+/* CTA Box */
+.cta-box {
+    background-color: #f0f5f0;
+    border-left: 4px solid #99d98c;
+    padding: 2em;
+    margin: 2em 0;
+    border-radius: 0.5em;
+}
+
+.cta-box h3 {
+    margin-top: 0;
+    color: #6b7770;
+}
+
+.cta-box .button {
+    margin-top: 1em;
+}
+
+/* Testimonial boxes */
+.box.testimonial {
+    background-color: #f9f9f9;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.box.testimonial blockquote {
+    border-left: 3px solid #99d98c;
+    padding-left: 1em;
+    margin: 0 0 1em 0;
+    font-style: italic;
+    color: #6b7770;
+}
+
+.box.testimonial .author {
+    text-align: right;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Highlight boxes in sidebar */
+.box.highlight {
+    padding: 1.5em;
+    background-color: #f0f5f0;
+    margin-bottom: 1.5em;
+}
+
+.box.highlight h3 {
+    margin-top: 0;
+    color: #6b7770;
+    display: flex;
+    align-items: center;
+}
+
+.box.highlight h3:before {
+    margin-right: 0.5em;
+    color: #99d98c;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 736px) {
+    .cta-box {
+        padding: 1.5em;
+    }
+    
+    .box.testimonial, 
+    .box.highlight {
+        padding: 1.25em;
+    }
+}

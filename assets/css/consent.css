@@ -1,0 +1,106 @@
+/* Cookie Consent Banner - Styled to match OccuHelp design */
+#cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f0f5f0;
+    background-image: url("images/overlay.png");
+    color: #6b7770;
+    padding: 1em;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.15);
+    z-index: 10000;
+    font-family: 'Open Sans', sans-serif;
+    display: none;
+    border-top: solid 4px #99d98c;
+}
+
+#cookie-consent-banner .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cookie-consent-banner .content {
+    flex: 1;
+    margin-right: 2em;
+}
+
+#cookie-consent-banner h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6b7770;
+    margin: 0 0 0.3em 0;
+    font-size: 1.15em;
+}
+
+#cookie-consent-banner p {
+    margin: 0 0 0.75em 0;
+    line-height: 1.5em;
+    font-size: 0.95em;
+}
+
+#cookie-consent-banner .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+#cookie-consent-banner .button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #99d98c;
+    color: #ffffff;
+    border: 0;
+    line-height: 1em;
+    border-radius: 6px;
+    outline: 0;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+    font-size: 0.9em;
+    padding: 0.6em 1.2em;
+    text-align: center;
+}
+
+#cookie-consent-banner .button:hover {
+    background: #c1edbb;
+}
+
+#cookie-consent-banner .button.alt {
+    background: #c1cac5;
+}
+
+#cookie-consent-banner .button.alt:hover {
+    background: #ccd5d0;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 736px) {
+    #cookie-consent-banner .container {
+        flex-direction: column;
+    }
+
+    #cookie-consent-banner .content {
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+    #cookie-consent-banner .buttons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #cookie-consent-banner .button {
+        width: 100%;
+        text-align: center;
+    }
+}

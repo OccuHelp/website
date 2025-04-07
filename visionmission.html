@@ -4,30 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="OccuHelp software streamlines injury prevention, risk reduction, 
+    <meta name="description" content="OccuHelp software streamlines injury prevention, risk reduction,
 	and occupational health to improve outcomes and mitigate workplace risks.">
     <meta name="keywords" content="Occupational Health Software, Injury Prevention, Risk Analysis">
     <meta name="author" content="OccuHelp, LLC">
 	<title>OccuHelp - Vision & Mission</title>
 	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/consent.css">
+	<link rel="stylesheet" href="assets/css/about-additions.css">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon-32x32.ico" sizes="32x32" type="image/ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="mask-icon" href="images/icon-192-maskable.png">
-    
+
     <!-- Open Graph Meta Tags (for social sharing) -->
     <meta property="og:title" content="OccuHelp">
-    <meta property="og:description" content="OccuHelp software streamlines injury prevention, risk reduction, 
+    <meta property="og:description" content="OccuHelp software streamlines injury prevention, risk reduction,
 	and occupational health to improve outcomes and mitigate workplace risks.">
     <meta property="og:image" content="https://www.occuhelp.com/images/OH-Social.png">
     <meta property="og:url" content="https://www.occuhelp.com">
-    
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="OccuHelp">
-    <meta name="twitter:description" content="OccuHelp software streamlines injury prevention, risk reduction, 
+    <meta name="twitter:description" content="OccuHelp software streamlines injury prevention, risk reduction,
 	and occupational health to improve outcomes and mitigate workplace risks.">
     <meta name="twitter:image" content="https://www.occuhelp.com/images/OH-Social.png">
 
@@ -41,12 +43,23 @@
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', 'G-JS564X2EC0');
+		// Default consent mode - will be updated based on user choice
+		gtag('consent', 'default', {
+			'ad_storage': 'denied',
+			'analytics_storage': 'denied'
+		});
+
+		// Enhanced measurement settings
+		gtag('config', 'G-JS564X2EC0', {
+			'send_page_view': true,
+			'cookie_domain': 'occuhelp.com',
+			'anonymize_ip': true
+		});
 	</script>
 
 </head>
 
-<body class="homepage is-preload">
+<body class="subpage is-preload">
 	<div id="page-wrapper">
 
 	<!-- Header -->
@@ -74,7 +87,7 @@
 				<li><a href="services.html">Services</a></li>
 				<li><a href="faq.html">FAQ</a></li>
 				<li><a href="contact.html">Contact</a></li>
-				
+
 				<!-- Button wrapped in a list item -->
 					<li class="button-container">
 						<a href="https://app.occuhelp.com" class="button scrolly" target="_blank">Login</a>
@@ -82,10 +95,112 @@
 			</ul>
 		</nav>
 
-	<!-- Banner -->
-
-
 	<!-- Main -->
+	<section id="main">
+		<div class="container">
+			<div class="row gtr-200">
+				<div class="col-8 col-12-medium">
+					<div id="content">
+
+						<!-- Content -->
+							<article>
+								<h2>Our Vision & Mission</h2>
+
+								<span class="image featured"><img src="images/pic05.jpg" alt="OccuHelp Vision"></span>
+
+								<div class="box highlight" style="margin-bottom: 2em;">
+									<h3 class="icon solid fa-eye">Our Vision</h3>
+									<p class="vision-statement">To create a world where every workplace is safe, healthy, and optimized for both human wellbeing and organizational success.</p>
+								</div>
+
+								<div class="box highlight" style="margin-bottom: 2em;">
+									<h3 class="icon solid fa-bullseye">Our Mission</h3>
+									<p class="mission-statement">To empower organizations with innovative software solutions that prevent workplace injuries, reduce health risks, and improve occupational health outcomes through data-driven insights and user-friendly tools.</p>
+								</div>
+
+								<h3>What Drives Us</h3>
+								<p>At OccuHelp, we're driven by the belief that workplace safety and employee health are fundamental to organizational success. Our vision and mission guide everything we do, from product development to customer support.</p>
+
+								<div class="row">
+									<div class="col-6 col-12-small">
+										<h4>The Problem We're Solving</h4>
+										<p>Workplace injuries and health issues cost businesses billions annually in direct costs, lost productivity, and human suffering. Traditional approaches to occupational health and safety often rely on reactive measures and paper-based systems that fail to identify patterns or predict potential issues.</p>
+									</div>
+									<div class="col-6 col-12-small">
+										<h4>Our Solution</h4>
+										<p>OccuHelp's software transforms how organizations approach workplace health and safety by providing real-time data analysis, predictive insights, and streamlined processes that make prevention and management more effective and efficient.</p>
+									</div>
+								</div>
+
+								<h3>Strategic Pillars</h3>
+								<p>To fulfill our mission and work toward our vision, we focus on four strategic pillars:</p>
+
+								<ul class="check-list">
+									<li><strong>Innovation</strong> - Continuously developing new features and capabilities that address emerging workplace health and safety challenges</li>
+									<li><strong>Accessibility</strong> - Making powerful tools available to organizations of all sizes through intuitive interfaces and flexible deployment options</li>
+									<li><strong>Partnership</strong> - Working closely with clients to understand their unique needs and challenges, and collaborating with industry experts to incorporate best practices</li>
+									<li><strong>Impact</strong> - Measuring and improving the real-world outcomes of our solutions, from injury reduction to cost savings and productivity gains</li>
+								</ul>
+
+								<h3>Looking Forward</h3>
+								<p>As we look to the future, we're committed to expanding our capabilities to address emerging workplace health and safety challenges. From integrating with wearable technology to leveraging artificial intelligence for more accurate risk prediction, we're constantly exploring new ways to help organizations create safer, healthier workplaces.</p>
+
+								<div class="cta-box">
+									<h3>Join us in our mission</h3>
+									<p>Whether you're looking to improve safety outcomes in your organization or interested in partnering with us, we'd love to hear from you.</p>
+									<a href="contact.html" class="button">Get in Touch</a>
+								</div>
+							</article>
+
+					</div>
+				</div>
+				<div class="col-4 col-12-medium">
+					<div id="sidebar">
+
+						<!-- Sidebar -->
+							<section>
+								<h3 class="major"><span>Our Approach</span></h3>
+								<ul class="divided">
+									<li>
+										<article class="box highlight">
+											<h3 class="icon solid fa-lightbulb">Proactive Prevention</h3>
+											<p>We believe in identifying and addressing risks before they lead to injuries or health issues.</p>
+										</article>
+									</li>
+									<li>
+										<article class="box highlight">
+											<h3 class="icon solid fa-chart-bar">Data-Informed Decisions</h3>
+											<p>Our solutions turn complex data into actionable insights that drive better decision-making.</p>
+										</article>
+									</li>
+									<li>
+										<article class="box highlight">
+											<h3 class="icon solid fa-users">Human-Centered Design</h3>
+											<p>We create tools that people actually want to use, making safety management more effective.</p>
+										</article>
+									</li>
+								</ul>
+							</section>
+
+							<section>
+								<h3 class="major"><span>Key Objectives</span></h3>
+								<div class="box">
+									<ul class="alt">
+										<li>Reduce workplace injuries by 50% for our clients</li>
+										<li>Decrease workers' compensation costs</li>
+										<li>Improve regulatory compliance</li>
+										<li>Enhance employee wellbeing and productivity</li>
+										<li>Make data-driven safety accessible to all</li>
+									</ul>
+								</div>
+								<a href="services.html" class="button alt">Explore Our Services</a>
+							</section>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
  <!-- Copyright -->
@@ -104,6 +219,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/consent.js"></script>
 
 	</div>
 </body>

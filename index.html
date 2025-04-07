@@ -4,30 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="OccuHelp software streamlines injury prevention, risk reduction, 
+    <meta name="description" content="OccuHelp software streamlines injury prevention, risk reduction,
 	and occupational health to improve outcomes and mitigate workplace risks.">
     <meta name="keywords" content="Occupational Health Software, Injury Prevention, Risk Analysis">
     <meta name="author" content="OccuHelp, LLC">
 	<title>OccuHelp</title>
 	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/consent.css">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon-32x32.ico" sizes="32x32" type="image/ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="mask-icon" href="images/icon-192-maskable.png">
-    
+
     <!-- Open Graph Meta Tags (for social sharing) -->
     <meta property="og:title" content="OccuHelp">
-    <meta property="og:description" content="OccuHelp software streamlines injury prevention, risk reduction, 
+    <meta property="og:description" content="OccuHelp software streamlines injury prevention, risk reduction,
 	and occupational health to improve outcomes and mitigate workplace risks.">
     <meta property="og:image" content="https://www.occuhelp.com/images/OH-Social.png">
     <meta property="og:url" content="https://www.occuhelp.com">
-    
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="OccuHelp">
-    <meta name="twitter:description" content="OccuHelp software streamlines injury prevention, risk reduction, 
+    <meta name="twitter:description" content="OccuHelp software streamlines injury prevention, risk reduction,
 	and occupational health to improve outcomes and mitigate workplace risks.">
     <meta name="twitter:image" content="https://www.occuhelp.com/images/OH-Social.png">
 
@@ -41,7 +42,18 @@
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', 'G-JS564X2EC0');
+		// Default consent mode - will be updated based on user choice
+		gtag('consent', 'default', {
+			'ad_storage': 'denied',
+			'analytics_storage': 'denied'
+		});
+
+		// Enhanced measurement settings
+		gtag('config', 'G-JS564X2EC0', {
+			'send_page_view': true,
+			'cookie_domain': 'occuhelp.com',
+			'anonymize_ip': true
+		});
 	</script>
 
 </head>
@@ -75,10 +87,10 @@
 				<li><a href="services.html">Services</a></li>
 				<li><a href="faq.html">FAQ</a></li>
 				<li><a href="contact.html">Contact</a></li>
-				
+
 				<!-- Button wrapped in a list item -->
 					<li class="button-container">
-						<a href="https://www.app.occuhelp.com" class="button scrolly" target="_blank">Login</a>
+						<a href="https://app.occuhelp.com" class="button scrolly" target="_blank">Login</a>
 					</li>
 			</ul>
 		</nav>
@@ -113,8 +125,8 @@
 									<h2>Simple & Secure Analytics</h2>
 									<p>Analytics designed for faster and easier decision making</p>
 								</header>
-								<p>Our entire system is constantly monitored for threats so you can rest 
-								assured, your information is protected. We've built our analytics interfaces 
+								<p>Our entire system is constantly monitored for threats so you can rest
+								assured, your information is protected. We've built our analytics interfaces
 								in an easy to understand way so you can take action quicker.</p>
 							</section>
 					</div>
@@ -132,8 +144,8 @@
 												<section class="box feature">
 													<a href="#" class="image featured"><img src="images/pic01.jpg" alt=""></a>
 													<h3><a href="#">Risk Analysis</a></h3>
-													<p> Identify, prioritize, and mitigate employee injury risk. Our tools are 
-														designed to assess everything from safety program and organizational 
+													<p> Identify, prioritize, and mitigate employee injury risk. Our tools are
+														designed to assess everything from safety program and organizational
 														risk, to the individual job and task risk. </p>
 												</section>
 
@@ -144,8 +156,8 @@
 												<section class="box feature">
 													<a href="#" class="image featured"><img src="images/pic02.jpg" alt=""></a>
 													<h3><a href="#">Injury Prevention</a></h3>
-													<p> We offer a vast array of industry proven prevention methodologies. 
-														From ergonomics to wellness, you'll be ready to 
+													<p> We offer a vast array of industry proven prevention methodologies.
+														From ergonomics to wellness, you'll be ready to
 														implement just about any injury prevention program.</p>
 												</section>
 
@@ -156,8 +168,8 @@
 												<section class="box feature">
 													<a href="#" class="image featured"><img src="images/pic03.jpg" alt=""></a>
 													<h3><a href="#">Injury Management</a></h3>
-													<p> A simple to use, data driven electronic medical records (EMR) keeping software. 
-														Our EMR is built specifically for occupational health professionals in the onsite 
+													<p> A simple to use, data driven electronic medical records (EMR) keeping software.
+														Our EMR is built specifically for occupational health professionals in the onsite
 														industrial setting.</p>
 												</section>
 
@@ -168,8 +180,8 @@
 												<section class="box feature">
 													<a href="#" class="image featured"><img src="images/pic04.jpg" alt=""></a>
 													<h3><a href="#">Operations</a></h3>
-													<p> Run your onsite occupational health clinic more efficiently with our 
-														operational tools. This includes everything from OSHA record keeping, to 
+													<p> Run your onsite occupational health clinic more efficiently with our
+														operational tools. This includes everything from OSHA record keeping, to
 														inventory monitoring and quality assurance. </p>
 												</section>
 
@@ -290,6 +302,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/consent.js"></script>
 
 	</div>
 </body>

@@ -4,31 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="OccuHelp software streamlines injury prevention, risk reduction, 
+    <meta name="description" content="OccuHelp software streamlines injury prevention, risk reduction,
 	and occupational health to improve outcomes and mitigate workplace risks.">
     <meta name="keywords" content="Occupational Health Software, Injury Prevention, Risk Analysis">
     <meta name="author" content="OccuHelp, LLC">
 	<title>OccuHelp - About Us</title>
 	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/consent.css">
+	<link rel="stylesheet" href="assets/css/about-additions.css">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon-32x32.ico" sizes="32x32" type="image/ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="mask-icon" href="images/icon-192-maskable.png">
-    
+
     <!-- Open Graph Meta Tags (for social sharing) -->
-    <meta property="og:title" content="OccuHelp">
-    <meta property="og:description" content="OccuHelp software streamlines injury prevention, risk reduction, 
-	and occupational health to improve outcomes and mitigate workplace risks.">
+    <meta property="og:title" content="OccuHelp - About Us">
+    <meta property="og:description" content="Learn about OccuHelp's mission to transform workplace health and safety through innovative software solutions.">
     <meta property="og:image" content="https://www.occuhelp.com/images/OH-Social.png">
-    <meta property="og:url" content="https://www.occuhelp.com">
-    
+    <meta property="og:url" content="https://www.occuhelp.com/about.html">
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="OccuHelp">
-    <meta name="twitter:description" content="OccuHelp software streamlines injury prevention, risk reduction, 
-	and occupational health to improve outcomes and mitigate workplace risks.">
+    <meta name="twitter:title" content="OccuHelp - About Us">
+    <meta name="twitter:description" content="Learn about OccuHelp's mission to transform workplace health and safety through innovative software solutions.">
     <meta name="twitter:image" content="https://www.occuhelp.com/images/OH-Social.png">
 
     <!-- Favicon for website -->
@@ -41,12 +41,23 @@
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', 'G-JS564X2EC0');
+		// Default consent mode - will be updated based on user choice
+		gtag('consent', 'default', {
+			'ad_storage': 'denied',
+			'analytics_storage': 'denied'
+		});
+
+		// Enhanced measurement settings
+		gtag('config', 'G-JS564X2EC0', {
+			'send_page_view': true,
+			'cookie_domain': 'occuhelp.com',
+			'anonymize_ip': true
+		});
 	</script>
 
 </head>
 
-<body class="homepage is-preload">
+<body class="subpage is-preload">
 	<div id="page-wrapper">
 
 	<!-- Header -->
@@ -63,7 +74,8 @@
 		<nav id="nav">
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li class="current"><a href="about.html">About Us</a>
+				<li class="current">
+					<a href="about.html">About Us</a>
 					<ul>
 						<li><a href="visionmission.html">Vision & Mission</a></li>
 						<li><a href="corevalues.html">Core Values</a></li>
@@ -74,7 +86,7 @@
 				<li><a href="services.html">Services</a></li>
 				<li><a href="faq.html">FAQ</a></li>
 				<li><a href="contact.html">Contact</a></li>
-				
+
 				<!-- Button wrapped in a list item -->
 					<li class="button-container">
 						<a href="https://app.occuhelp.com" class="button scrolly" target="_blank">Login</a>
@@ -82,21 +94,98 @@
 			</ul>
 		</nav>
 
-	<!-- Banner -->
-
-
 	<!-- Main -->
+		<section id="main">
+			<div class="container">
+				<div class="row gtr-200">
+					<div class="col-8 col-12-medium">
+						<div id="content">
 
+							<!-- Content -->
+								<article>
+									<h2>About OccuHelp</h2>
 
- <!-- Copyright -->
+									<p>Founded in <span class="highlight">2015</span>, OccuHelp has been at the forefront of transforming how organizations approach workplace health and safety. Our innovative software solutions help businesses identify risks, prevent injuries, and manage occupational health more effectively.</p>
+									
+									<span class="image featured"><img src="images/about-team.jpg" alt="OccuHelp Team"></span>
+									
+									<h3>Our Approach</h3>
+									<p>At OccuHelp, we believe that workplace safety and employee health are not just regulatory requirements but essential components of a successful business. Our approach combines cutting-edge technology with evidence-based practices to create solutions that are:</p>
+									
+									<ul class="check-list">
+										<li><strong>Data-driven</strong> - Leveraging analytics to identify patterns and predict potential issues</li>
+										<li><strong>User-friendly</strong> - Designed with the end-user in mind for maximum adoption</li>
+										<li><strong>Customizable</strong> - Adaptable to the unique needs of different industries and organizations</li>
+										<li><strong>Integrated</strong> - Seamlessly connecting with existing systems and workflows</li>
+									</ul>
+									
+									<h3>Our Team</h3>
+									<p>The OccuHelp team brings together expertise from occupational health, software development, data science, and business management. This interdisciplinary approach allows us to understand the complex challenges our clients face and develop solutions that address their specific needs.</p>
+									
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<h4>Leadership</h4>
+											<p>Our leadership team combines decades of experience in workplace health and safety with technical expertise in software development and data analytics.</p>
+										</div>
+										<div class="col-6 col-12-small">
+											<h4>Development</h4>
+											<p>Our developers work closely with occupational health experts to create intuitive, powerful tools that make a real difference in workplace safety outcomes.</p>
+										</div>
+									</div>
+									
+									<div class="cta-box">
+										<h3>Ready to transform your approach to workplace health and safety?</h3>
+										<p>Discover how OccuHelp can help your organization prevent injuries, reduce risks, and improve outcomes.</p>
+										<a href="contact.html" class="button">Contact Us Today</a>
+									</div>
+								</article>
 
-	<div id="copyright">
- 		<ul class="menu">
-			<li>&copy; <script>document.write(new Date().getFullYear());</script> OccuHelp. All rights reserved.</li>
-		</ul>
+						</div>
+					</div>
+					<div class="col-4 col-12-medium">
+						<div id="sidebar">
+
+							<!-- Sidebar -->
+								<section>
+									<h3 class="major"><span>Why Choose OccuHelp</span></h3>
+									<ul class="divided">
+										<li>
+											<article class="box highlight">
+												<h3 class="icon solid fa-chart-line">Data-Driven Insights</h3>
+												<p>Our analytics engine identifies patterns and trends to help you make informed decisions about workplace safety.</p>
+											</article>
+										</li>
+										<li>
+											<article class="box highlight">
+												<h3 class="icon solid fa-users">User-Centric Design</h3>
+												<p>Intuitive interfaces and workflows designed for real-world use by safety professionals, managers, and employees.</p>
+											</article>
+										</li>
+										<li>
+											<article class="box highlight">
+												<h3 class="icon solid fa-shield-alt">Comprehensive Protection</h3>
+												<p>From risk assessment to incident management and return-to-work planning, our platform covers the entire safety lifecycle.</p>
+											</article>
+										</li>
+									</ul>
+									<a href="services.html" class="button alt">Explore Our Services</a>
+								</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	<!-- Copyright -->
+		<div id="copyright">
+			<ul class="menu">
+				<li>&copy; <script>document.write(new Date().getFullYear());</script> OccuHelp. All rights reserved.</li>
+			</ul>
+		</div>
+
 	</div>
 
-<!-- Scripts -->
+	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -104,7 +193,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/consent.js"></script>
 
-	</div>
 </body>
 </html>

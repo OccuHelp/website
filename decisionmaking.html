@@ -4,30 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="OccuHelp software streamlines injury prevention, risk reduction, 
+    <meta name="description" content="OccuHelp software streamlines injury prevention, risk reduction,
 	and occupational health to improve outcomes and mitigate workplace risks.">
     <meta name="keywords" content="Occupational Health Software, Injury Prevention, Risk Analysis">
     <meta name="author" content="OccuHelp, LLC">
 	<title>OccuHelp - Decision Making</title>
 	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/consent.css">
+	<link rel="stylesheet" href="assets/css/about-additions.css">
+	<link rel="stylesheet" href="assets/css/about-pages.css">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon-32x32.ico" sizes="32x32" type="image/ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="mask-icon" href="images/icon-192-maskable.png">
-    
+
     <!-- Open Graph Meta Tags (for social sharing) -->
     <meta property="og:title" content="OccuHelp">
-    <meta property="og:description" content="OccuHelp software streamlines injury prevention, risk reduction, 
+    <meta property="og:description" content="OccuHelp software streamlines injury prevention, risk reduction,
 	and occupational health to improve outcomes and mitigate workplace risks.">
     <meta property="og:image" content="https://www.occuhelp.com/images/OH-Social.png">
     <meta property="og:url" content="https://www.occuhelp.com">
-    
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="OccuHelp">
-    <meta name="twitter:description" content="OccuHelp software streamlines injury prevention, risk reduction, 
+    <meta name="twitter:description" content="OccuHelp software streamlines injury prevention, risk reduction,
 	and occupational health to improve outcomes and mitigate workplace risks.">
     <meta name="twitter:image" content="https://www.occuhelp.com/images/OH-Social.png">
 
@@ -41,12 +44,23 @@
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', 'G-JS564X2EC0');
+		// Default consent mode - will be updated based on user choice
+		gtag('consent', 'default', {
+			'ad_storage': 'denied',
+			'analytics_storage': 'denied'
+		});
+
+		// Enhanced measurement settings
+		gtag('config', 'G-JS564X2EC0', {
+			'send_page_view': true,
+			'cookie_domain': 'occuhelp.com',
+			'anonymize_ip': true
+		});
 	</script>
 
 </head>
 
-<body class="homepage is-preload">
+<body class="subpage is-preload">
 	<div id="page-wrapper">
 
 	<!-- Header -->
@@ -74,7 +88,7 @@
 				<li><a href="services.html">Services</a></li>
 				<li><a href="faq.html">FAQ</a></li>
 				<li><a href="contact.html">Contact</a></li>
-				
+
 				<!-- Button wrapped in a list item -->
 					<li class="button-container">
 						<a href="https://app.occuhelp.com" class="button scrolly" target="_blank">Login</a>
@@ -82,10 +96,150 @@
 			</ul>
 		</nav>
 
-	<!-- Banner -->
-
-
 	<!-- Main -->
+	<section id="main">
+		<div class="container">
+			<div class="row gtr-200">
+				<div class="col-12">
+					<div class="section-intro">
+						<h2>Our Decision-Making Framework</h2>
+						<p>At OccuHelp, we believe that how we make decisions is just as important as the decisions themselves. Our structured approach ensures that we consistently make choices that align with our values and serve our clients' best interests.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row gtr-200">
+				<div class="col-8 col-12-medium">
+					<div class="decision-process">
+						<div class="decision-step">
+							<h3>Define the Problem</h3>
+							<p>We start by clearly articulating the problem or opportunity, ensuring we understand its scope and impact. This includes gathering relevant data and identifying stakeholders who may be affected.</p>
+							<p>Key questions we ask:</p>
+							<ul>
+								<li>What is the core issue we're trying to address?</li>
+								<li>Who is affected by this decision?</li>
+								<li>What data do we need to understand the situation fully?</li>
+							</ul>
+						</div>
+
+						<div class="decision-step">
+							<h3>Align with Values and Mission</h3>
+							<p>Every decision we make is evaluated against our core values and mission. This ensures that our actions consistently reflect what we stand for as an organization.</p>
+							<p>We consider:</p>
+							<ul>
+								<li>How does this decision support our mission of improving workplace safety?</li>
+								<li>Which of our core values are relevant to this decision?</li>
+								<li>Are there any potential conflicts with our values?</li>
+							</ul>
+						</div>
+
+						<div class="decision-step">
+							<h3>Generate and Evaluate Options</h3>
+							<p>We develop multiple potential solutions and evaluate them based on their alignment with our values, potential impact, feasibility, and risks.</p>
+							<p>Our evaluation criteria include:</p>
+							<ul>
+								<li>Effectiveness in addressing the core problem</li>
+								<li>Resource requirements and constraints</li>
+								<li>Potential risks and how they can be mitigated</li>
+								<li>Short and long-term implications</li>
+							</ul>
+						</div>
+
+						<div class="decision-step">
+							<h3>Make the Decision</h3>
+							<p>After thorough evaluation, we select the option that best addresses the problem while aligning with our values and mission. We document the rationale behind our decision to ensure transparency.</p>
+						</div>
+
+						<div class="decision-step">
+							<h3>Implement and Monitor</h3>
+							<p>We develop a clear implementation plan with defined responsibilities and timelines. Throughout implementation, we monitor progress and outcomes, making adjustments as needed.</p>
+							<p>Key implementation considerations:</p>
+							<ul>
+								<li>Who needs to be involved in implementation?</li>
+								<li>What metrics will we use to measure success?</li>
+								<li>How will we communicate the decision to stakeholders?</li>
+							</ul>
+						</div>
+
+						<div class="decision-step">
+							<h3>Review and Learn</h3>
+							<p>We regularly review the outcomes of our decisions to evaluate their effectiveness and identify lessons learned. This continuous learning approach helps us refine our decision-making process over time.</p>
+							<p>Our review process includes:</p>
+							<ul>
+								<li>Did we achieve the intended outcomes?</li>
+								<li>What went well and what could have been improved?</li>
+								<li>What can we learn for future decisions?</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="decision-example">
+						<h4>Our Framework in Action: Product Feature Prioritization</h4>
+						<p>When deciding which features to include in our software updates, we apply our decision-making framework to ensure we're delivering the most value to our clients:</p>
+						<ol>
+							<li><strong>Define:</strong> We gather user feedback and usage data to identify pain points and opportunities.</li>
+							<li><strong>Align:</strong> We evaluate potential features against our mission of improving workplace safety outcomes.</li>
+							<li><strong>Evaluate:</strong> We assess each feature's potential impact, development complexity, and alignment with our product roadmap.</li>
+							<li><strong>Decide:</strong> We prioritize features that deliver the greatest safety impact while being feasible within our resource constraints.</li>
+							<li><strong>Implement:</strong> Our development team builds the features with regular check-ins to ensure they're meeting the intended goals.</li>
+							<li><strong>Review:</strong> After release, we measure user adoption and impact on safety metrics to evaluate effectiveness.</li>
+						</ol>
+					</div>
+				</div>
+
+				<div class="col-4 col-12-medium">
+					<div class="sidebar">
+						<section>
+							<h3 class="major"><span>Decision Principles</span></h3>
+							<div class="box highlight">
+								<h4>Data-Informed</h4>
+								<p>We base our decisions on relevant data and evidence rather than assumptions or opinions alone.</p>
+							</div>
+
+							<div class="box highlight">
+								<h4>Transparent</h4>
+								<p>We clearly communicate the reasoning behind our decisions to build trust with stakeholders.</p>
+							</div>
+
+							<div class="box highlight">
+								<h4>Inclusive</h4>
+								<p>We involve relevant stakeholders in the decision-making process to ensure diverse perspectives are considered.</p>
+							</div>
+
+							<div class="box highlight">
+								<h4>Long-Term Focused</h4>
+								<p>We consider both immediate outcomes and long-term implications when making decisions.</p>
+							</div>
+						</section>
+
+						<section>
+							<h3 class="major"><span>Decision Tools</span></h3>
+							<p>We employ various tools and techniques to support our decision-making process:</p>
+							<ul class="alt">
+								<li>SWOT Analysis</li>
+								<li>Decision Matrices</li>
+								<li>Cost-Benefit Analysis</li>
+								<li>Risk Assessment Models</li>
+								<li>Stakeholder Impact Analysis</li>
+								<li>Scenario Planning</li>
+							</ul>
+						</section>
+
+						<section>
+							<span class="image featured"><img src="images/pic04.jpg" alt="OccuHelp Decision Meeting"></span>
+							<p class="image-caption">Our team using our decision-making framework during a product planning session</p>
+						</section>
+					</div>
+				</div>
+			</div>
+
+			<div class="cta-box">
+				<h3>Experience our thoughtful approach</h3>
+				<p>See how our structured decision-making process translates to better outcomes for your organization's safety initiatives.</p>
+				<a href="contact.html" class="button">Start a Conversation</a>
+			</div>
+		</div>
+	</section>
 
 
  <!-- Copyright -->
@@ -104,6 +258,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/consent.js"></script>
 
 	</div>
 </body>

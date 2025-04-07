@@ -4,30 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="OccuHelp software streamlines injury prevention, risk reduction, 
+    <meta name="description" content="OccuHelp software streamlines injury prevention, risk reduction,
 	and occupational health to improve outcomes and mitigate workplace risks.">
     <meta name="keywords" content="Occupational Health Software, Injury Prevention, Risk Analysis">
     <meta name="author" content="OccuHelp, LLC">
 	<title>OccuHelp - Our Story</title>
 	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/consent.css">
+	<link rel="stylesheet" href="assets/css/about-additions.css">
+	<link rel="stylesheet" href="assets/css/about-pages.css">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon-32x32.ico" sizes="32x32" type="image/ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="mask-icon" href="images/icon-192-maskable.png">
-    
+
     <!-- Open Graph Meta Tags (for social sharing) -->
     <meta property="og:title" content="OccuHelp">
-    <meta property="og:description" content="OccuHelp software streamlines injury prevention, risk reduction, 
+    <meta property="og:description" content="OccuHelp software streamlines injury prevention, risk reduction,
 	and occupational health to improve outcomes and mitigate workplace risks.">
     <meta property="og:image" content="https://www.occuhelp.com/images/OH-Social.png">
     <meta property="og:url" content="https://www.occuhelp.com">
-    
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="OccuHelp">
-    <meta name="twitter:description" content="OccuHelp software streamlines injury prevention, risk reduction, 
+    <meta name="twitter:description" content="OccuHelp software streamlines injury prevention, risk reduction,
 	and occupational health to improve outcomes and mitigate workplace risks.">
     <meta name="twitter:image" content="https://www.occuhelp.com/images/OH-Social.png">
 
@@ -41,12 +44,23 @@
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', 'G-JS564X2EC0');
+		// Default consent mode - will be updated based on user choice
+		gtag('consent', 'default', {
+			'ad_storage': 'denied',
+			'analytics_storage': 'denied'
+		});
+
+		// Enhanced measurement settings
+		gtag('config', 'G-JS564X2EC0', {
+			'send_page_view': true,
+			'cookie_domain': 'occuhelp.com',
+			'anonymize_ip': true
+		});
 	</script>
 
 </head>
 
-<body class="homepage is-preload">
+<body class="subpage is-preload">
 	<div id="page-wrapper">
 
 	<!-- Header -->
@@ -74,7 +88,7 @@
 				<li><a href="services.html">Services</a></li>
 				<li><a href="faq.html">FAQ</a></li>
 				<li><a href="contact.html">Contact</a></li>
-				
+
 				<!-- Button wrapped in a list item -->
 					<li class="button-container">
 						<a href="https://app.occuhelp.com" class="button scrolly" target="_blank">Login</a>
@@ -82,10 +96,118 @@
 			</ul>
 		</nav>
 
-	<!-- Banner -->
-
-
 	<!-- Main -->
+	<section id="main">
+		<div class="container">
+			<div class="section-intro">
+				<h2>Our Story</h2>
+				<p>The journey of OccuHelp is one of innovation, dedication, and a relentless commitment to improving workplace safety. Here's how our story unfolded.</p>
+			</div>
+
+			<div class="timeline">
+				<div class="timeline-container left">
+					<div class="timeline-content">
+						<div class="timeline-year">2015</div>
+						<h3>The Beginning</h3>
+						<p>OccuHelp was founded by a team of occupational health professionals and software engineers who recognized a critical gap in workplace safety technology. After witnessing the limitations of paper-based systems and disconnected software solutions, they set out to create an integrated platform that could truly transform how organizations approach workplace health and safety.</p>
+						<span class="image featured"><img src="images/pic01.jpg" alt="OccuHelp Founding Team"></span>
+					</div>
+				</div>
+
+				<div class="timeline-container right">
+					<div class="timeline-content">
+						<div class="timeline-year">2016</div>
+						<h3>First Product Launch</h3>
+						<p>After months of development and testing, we launched our first product: a basic incident tracking and reporting system. While simple by today's standards, it laid the foundation for our data-driven approach to workplace safety management.</p>
+						<p>Our first clients were small manufacturing companies looking to improve their safety records and streamline compliance reporting. Their feedback was invaluable in shaping our product roadmap.</p>
+					</div>
+				</div>
+
+				<div class="timeline-container left">
+					<div class="timeline-content">
+						<div class="timeline-year">2017</div>
+						<h3>Expanding Capabilities</h3>
+						<p>Building on the success of our initial offering, we expanded our platform to include risk assessment tools and preventive action planning. This shift from reactive to proactive safety management resonated strongly with our growing client base.</p>
+						<div class="story-quote">
+							"The moment we realized we could help prevent injuries before they happened, not just track them afterward—that's when we knew we were onto something truly transformative."
+						</div>
+						<p class="story-quote-author">— OccuHelp Co-Founder</p>
+					</div>
+				</div>
+
+				<div class="timeline-container right">
+					<div class="timeline-content">
+						<div class="timeline-year">2018</div>
+						<h3>Analytics Revolution</h3>
+						<p>In 2018, we introduced our analytics engine, which allowed clients to identify patterns and trends in their safety data. This breakthrough feature enabled organizations to make more informed decisions about resource allocation and intervention strategies.</p>
+						<p>During this period, we also expanded our team, bringing on data scientists and UX specialists to enhance our platform's capabilities and usability.</p>
+					</div>
+				</div>
+
+				<div class="timeline-container left">
+					<div class="timeline-content">
+						<div class="timeline-year">2019</div>
+						<h3>Industry Recognition</h3>
+						<p>Our innovative approach to workplace safety management began to gain industry recognition. We were honored with several awards for innovation in occupational health technology and were featured in leading industry publications.</p>
+						<p>This recognition helped us expand into new markets and industries, from healthcare to construction and beyond.</p>
+						<span class="image featured"><img src="images/pic02.jpg" alt="OccuHelp Award Ceremony"></span>
+					</div>
+				</div>
+
+				<div class="timeline-container right">
+					<div class="timeline-content">
+						<div class="timeline-year">2020</div>
+						<h3>Adapting to Global Challenges</h3>
+						<p>When the COVID-19 pandemic hit, we quickly pivoted to help our clients navigate new workplace health challenges. We developed modules for contact tracing, health screening, and remote work safety assessments.</p>
+						<p>This period reinforced our commitment to being responsive to our clients' evolving needs and demonstrated the flexibility of our platform.</p>
+					</div>
+				</div>
+
+				<div class="timeline-container left">
+					<div class="timeline-content">
+						<div class="timeline-year">2021-Present</div>
+						<h3>Continued Growth and Innovation</h3>
+						<p>In recent years, we've continued to expand our platform's capabilities, incorporating machine learning for predictive analytics and developing mobile applications for field use. We've also grown our team and client base significantly.</p>
+						<p>Today, OccuHelp serves organizations of all sizes across multiple industries, helping them create safer workplaces and protect their most valuable asset—their people.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="highlight-box">
+				<h3>Our Impact</h3>
+				<p>Since our founding, we've helped hundreds of organizations transform their approach to workplace safety:</p>
+				<div class="row">
+					<div class="col-4 col-12-small">
+						<div style="text-align: center;">
+							<span style="font-size: 3em; color: #99d98c;">500+</span>
+							<p><strong>Organizations</strong><br>using our platform</p>
+						</div>
+					</div>
+					<div class="col-4 col-12-small">
+						<div style="text-align: center;">
+							<span style="font-size: 3em; color: #99d98c;">35%</span>
+							<p><strong>Average Reduction</strong><br>in workplace injuries</p>
+						</div>
+					</div>
+					<div class="col-4 col-12-small">
+						<div style="text-align: center;">
+							<span style="font-size: 3em; color: #99d98c;">20+</span>
+							<p><strong>Industries</strong><br>served worldwide</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h3>Looking to the Future</h3>
+			<p>As we continue our journey, we remain committed to our founding mission: creating safer, healthier workplaces through innovative technology solutions. We're excited about the road ahead and the opportunity to make an even greater impact on workplace safety worldwide.</p>
+
+			<div class="cta-box">
+				<h3>Be part of our story</h3>
+				<p>Join the hundreds of organizations that have transformed their approach to workplace safety with OccuHelp.</p>
+				<a href="contact.html" class="button">Contact Us Today</a>
+			</div>
+		</div>
+	</section>
 
 
  <!-- Copyright -->
@@ -104,6 +226,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/consent.js"></script>
 
 	</div>
 </body>
