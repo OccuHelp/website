@@ -1,0 +1,12 @@
+# robots.txt for occuhelp.com
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.occuhelp.com/sitemap.xml
+
+# Prevent crawling of certain files and directories
+Disallow: /assets/js/
+Disallow: /assets/css/
+Disallow: /.htaccess
+Disallow: /web.config
