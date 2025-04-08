@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="OccuHelp software streamlines injury prevention, risk reduction,
-	and occupational health to improve outcomes and mitigate workplace risks.">
-    <meta name="keywords" content="Occupational Health Software, Injury Prevention, Risk Analysis">
+    <meta name="description" content="OccuHelp software streamlines injury prevention, risk reduction, and occupational health to improve outcomes and mitigate workplace risks.">
+    <meta name="keywords" content="Occupational Health Software, Injury Prevention, Risk Analysis, Workplace Safety">
     <meta name="author" content="OccuHelp, LLC">
-	<title>OccuHelp</title>
-	<link rel="stylesheet" href="assets/css/main.css">
-	<link rel="stylesheet" href="assets/css/consent.css">
+    <title>OccuHelp</title>
 
-    <!-- Favicon -->
+    <!-- Core Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/consent.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Favicon and App Icons -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon-32x32.ico" sizes="32x32" type="image/ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
@@ -20,42 +22,37 @@
 
     <!-- Open Graph Meta Tags (for social sharing) -->
     <meta property="og:title" content="OccuHelp">
-    <meta property="og:description" content="OccuHelp software streamlines injury prevention, risk reduction,
-	and occupational health to improve outcomes and mitigate workplace risks.">
+    <meta property="og:description" content="OccuHelp software streamlines injury prevention, risk reduction, and occupational health to improve outcomes and mitigate workplace risks.">
     <meta property="og:image" content="https://www.occuhelp.com/images/OH-Social.png">
     <meta property="og:url" content="https://www.occuhelp.com">
+    <meta property="og:type" content="website">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="OccuHelp">
-    <meta name="twitter:description" content="OccuHelp software streamlines injury prevention, risk reduction,
-	and occupational health to improve outcomes and mitigate workplace risks.">
+    <meta name="twitter:description" content="OccuHelp software streamlines injury prevention, risk reduction, and occupational health to improve outcomes and mitigate workplace risks.">
     <meta name="twitter:image" content="https://www.occuhelp.com/images/OH-Social.png">
 
-    <!-- Favicon for website -->
-    <link rel="icon" href="favicon.ico">
+    <!-- Google Analytics with Privacy Controls -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JS564X2EC0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-	<!-- Google Analytics Tag -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-JS564X2EC0"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+        // Default consent mode - will be updated based on user choice
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied'
+        });
 
-		// Default consent mode - will be updated based on user choice
-		gtag('consent', 'default', {
-			'ad_storage': 'denied',
-			'analytics_storage': 'denied'
-		});
-
-		// Enhanced measurement settings
-		gtag('config', 'G-JS564X2EC0', {
-			'send_page_view': true,
-			'cookie_domain': 'occuhelp.com',
-			'anonymize_ip': true
-		});
-	</script>
-
+        // Enhanced measurement settings
+        gtag('config', 'G-JS564X2EC0', {
+            'send_page_view': true,
+            'cookie_domain': 'occuhelp.com',
+            'anonymize_ip': true
+        });
+    </script>
 </head>
 
 <body class="homepage is-preload">
@@ -95,15 +92,15 @@
 			</ul>
 		</nav>
 
-	<!-- Banner -->
+	<!-- Hero Banner Section -->
 		<section id="banner">
 			<div class="content">
-				<h2>All-In-One <span style="font-size: 30px;">Software</span></h2>
+				<h2>All-In-One <span class="subtitle">Workplace Safety Platform</span></h2>
 				<p>Risk analysis</p>
 				<p>Injury prevention</p>
 				<p>Injury management</p>
 				<p>Occupational health operations</p>
-				<a href="#tools" class="button scrolly">See Our solution</a>
+				<a href="#tools" class="button scrolly">Explore Our Solutions</a>
 			</div>
 		</section>
 
@@ -286,24 +283,25 @@
 			</div>
 		</section>
 
- <!-- Copyright -->
-
-	<div id="copyright">
- 		<ul class="menu">
+<!-- Footer with Copyright -->
+	<footer id="copyright">
+		<ul class="menu">
 			<li>&copy; <script>document.write(new Date().getFullYear());</script> OccuHelp. All rights reserved.</li>
 		</ul>
-	</div>
+	</footer>
 
-<!-- Scripts -->
+<!-- Core JavaScript Libraries -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
+
+<!-- Custom Scripts -->
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/consent.js"></script>
 
-	</div>
+	</div><!-- End of page-wrapper -->
 </body>
 </html>

@@ -1,4 +1,8 @@
-/* Cookie Consent Banner - Styled to match OccuHelp design */
+/**
+ * Cookie Consent Banner
+ * Styled to match OccuHelp design system
+ * Provides a non-intrusive but compliant cookie consent interface
+ */
 #cookie-consent-banner {
     position: fixed;
     bottom: 0;
@@ -84,9 +88,20 @@
 }
 
 /* Responsive adjustments */
+@media screen and (max-width: 980px) {
+    #cookie-consent-banner .container {
+        padding: 0 1em;
+    }
+
+    #cookie-consent-banner .content {
+        margin-right: 1em;
+    }
+}
+
 @media screen and (max-width: 736px) {
     #cookie-consent-banner .container {
         flex-direction: column;
+        padding: 0.5em;
     }
 
     #cookie-consent-banner .content {
@@ -102,5 +117,12 @@
     #cookie-consent-banner .button {
         width: 100%;
         text-align: center;
+    }
+}
+
+/* Print styles - hide consent banner when printing */
+@media print {
+    #cookie-consent-banner {
+        display: none !important;
     }
 }
