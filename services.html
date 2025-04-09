@@ -4,445 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="OccuHelp subscription plans and pricing for workplace safety and health management software solutions.">
-    <meta name="keywords" content="Occupational Health Software, Injury Prevention, Risk Analysis, Pricing, Subscriptions">
+    <meta name="description" content="OccuHelp software tools and services for workplace safety, risk analysis, prevention, medical management, and operations.">
+    <meta name="keywords" content="Occupational Health Software, Risk Analysis, Injury Prevention, Medical Management, Operations">
     <meta name="author" content="OccuHelp, LLC">
     <title>OccuHelp - Services</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/consent.css">
     <link rel="stylesheet" href="assets/css/custom.css">
-    <style>
-        /* Pricing Calculator Styles */
-        .calculator-container {
-            background: #f9f9f9;
-            border-radius: 10px;
-            padding: 2em;
-            margin: 2em 0;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-
-        .price-calculator {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2em;
-        }
-
-        .calculator-inputs {
-            flex: 2;
-            min-width: 300px;
-        }
-
-        .calculator-results {
-            flex: 1;
-            min-width: 200px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background: #fff;
-            padding: 1.5em;
-            border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .input-group {
-            margin-bottom: 1.5em;
-        }
-
-        .input-group label {
-            display: block;
-            margin-bottom: 0.5em;
-            font-weight: 600;
-            color: #6b7770;
-        }
-
-        .input-group input[type="number"] {
-            width: 100%;
-            padding: 0.75em;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 1em;
-        }
-
-        .disclaimer {
-            font-size: 0.8em;
-            color: #777;
-            margin-top: 0.3em;
-            font-style: italic;
-            line-height: 1.3;
-        }
-
-        .input-group.info {
-            margin-top: 1em;
-        }
-
-        .input-group.info .info-text {
-            padding: 0.75em;
-            background-color: #f0f8f0;
-            border-radius: 4px;
-            color: #6b7770;
-            font-weight: 600;
-            text-align: center;
-            border-left: 3px solid #99d98c;
-        }
-
-        .result-group.savings {
-            margin-top: 2.5em;
-            padding-top: 1.5em;
-            border-top: 1px dashed #ddd;
-        }
-
-        .bill-layout {
-            width: 100%;
-            margin: 0 auto;
-            border: 1px solid #eee;
-            border-radius: 8px;
-            padding: 1em;
-            background-color: #fafafa;
-        }
-
-        .bill-layout.monthly-bill {
-            margin-top: 1.5em;
-            background-color: #f0f8f0;
-            border-color: #d0e8d0;
-        }
-
-        .bill-layout.monthly-bill .bill-value {
-            color: #4a9e5c;
-            font-weight: 700;
-        }
-
-        .bill-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0.5em 0;
-            border-bottom: 1px dashed #eee;
-        }
-
-        .bill-row:last-child {
-            border-bottom: none;
-        }
-
-        .bill-label {
-            font-weight: 600;
-            color: #6b7770;
-            display: flex;
-            align-items: center;
-        }
-
-        .bill-value {
-            font-weight: 600;
-            font-size: 1.1em;
-        }
-
-        .crossed-out {
-            text-decoration: line-through;
-            color: #999;
-            position: relative;
-        }
-
-        .discount-row {
-            color: #4a9e5c;
-        }
-
-        .discount-value {
-            color: #4a9e5c;
-        }
-
-        .total-row {
-            margin-top: 0.5em;
-            padding-top: 0.5em;
-            border-top: 2px solid #eee;
-            border-bottom: none;
-            font-size: 1.1em;
-        }
-
-        .total-row .bill-value {
-            font-size: 1.2em;
-            font-weight: 700;
-            color: #99d98c;
-        }
-
-        .savings-badge {
-            background-color: #4a9e5c;
-            color: white;
-            font-weight: 600;
-            padding: 0.2em 0.4em;
-            border-radius: 3px;
-            font-size: 0.8em;
-            margin-right: 0.5em;
-        }
-
-        #savings-amount {
-            font-weight: 600;
-        }
-
-        .result-group {
-            margin-bottom: 1em;
-            text-align: center;
-        }
-
-        .result-label {
-            font-weight: 600;
-            color: #6b7770;
-            margin-bottom: 0.5em;
-        }
-
-        .result-value {
-            font-size: 2em;
-            font-weight: 700;
-            color: #99d98c;
-        }
-
-        @media screen and (max-width: 736px) {
-            .price-calculator {
-                flex-direction: column;
-            }
-
-            .calculator-results {
-                padding: 1em;
-            }
-
-            .result-value {
-                font-size: 1.75em;
-            }
-        }
-
-        /* Pricing Tiers Styles */
-        .pricing-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2em;
-            margin: 2em 0;
-        }
-
-        .pricing-tier {
-            flex: 1;
-            min-width: 280px;
-            max-width: 350px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-            padding: 2em;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .pricing-tier:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-        }
-
-        .pricing-tier.featured {
-            transform: scale(1.05);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-            border: 2px solid #99d98c;
-        }
-
-        .pricing-tier.featured:hover {
-            transform: scale(1.05) translateY(-10px);
-        }
-
-        .tier-header {
-            text-align: center;
-            padding-bottom: 1.5em;
-            border-bottom: 1px solid #eee;
-            margin-bottom: 1.5em;
-        }
-
-        .tier-name {
-            font-size: 1.5em;
-            font-weight: 700;
-            margin-bottom: 0.5em;
-            color: #6b7770;
-        }
-
-        .tier-description {
-            font-size: 0.9em;
-            color: #888;
-            margin-bottom: 1em;
-        }
-
-        .tier-price {
-            font-size: 2.5em;
-            font-weight: 700;
-            color: #99d98c;
-            margin-bottom: 0.2em;
-        }
-
-        .tier-price-period {
-            font-size: 0.9em;
-            color: #999;
-        }
-
-        .tier-features {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        .tier-features li {
-            padding: 0.75em 0;
-            border-bottom: 1px solid #f5f5f5;
-            display: flex;
-            align-items: center;
-        }
-
-        .tier-features li:before {
-            content: "✓";
-            color: #99d98c;
-            font-weight: bold;
-            margin-right: 0.75em;
-        }
-
-        .tier-features li.unavailable {
-            color: #ccc;
-        }
-
-        .tier-features li.unavailable:before {
-            content: "×";
-            color: #ddd;
-        }
-
-        .tier-cta {
-            text-align: center;
-            margin-top: 2em;
-        }
-
-        /* Comparison Table */
-        .comparison-container {
-            margin: 3em 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease;
-            max-height: 0;
-        }
-
-        .comparison-container.open {
-            max-height: 2000px;
-        }
-
-        .comparison-toggle {
-            text-align: center;
-            margin: 2em 0;
-        }
-
-        .comparison-toggle button {
-            background: none;
-            border: none;
-            color: #99d98c;
-            font-weight: 700;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto;
-            padding: 0.5em 1em;
-            transition: color 0.3s ease;
-        }
-
-        .comparison-toggle button:hover {
-            color: #6b7770;
-        }
-
-        .comparison-toggle button:after {
-            content: "";
-            display: inline-block;
-            width: 0.8em;
-            height: 0.8em;
-            margin-left: 0.5em;
-            border-right: 2px solid #99d98c;
-            border-bottom: 2px solid #99d98c;
-            transform: rotate(45deg);
-            transition: transform 0.3s ease;
-        }
-
-        .comparison-toggle button.open:after {
-            transform: rotate(-135deg);
-        }
-
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2em 0;
-        }
-
-        .comparison-table th,
-        .comparison-table td {
-            padding: 1em;
-            text-align: center;
-            border-bottom: 1px solid #eee;
-        }
-
-        .comparison-table th {
-            background-color: #f9f9f9;
-            font-weight: 700;
-            color: #6b7770;
-        }
-
-        .comparison-table th:first-child,
-        .comparison-table td:first-child {
-            text-align: left;
-            font-weight: 600;
-        }
-
-        .comparison-table tr:hover {
-            background-color: #f9f9f9;
-        }
-
-        .comparison-table .check {
-            color: #99d98c;
-            font-size: 1.2em;
-        }
-
-        .comparison-table .cross {
-            color: #ccc;
-            font-size: 1.2em;
-        }
-
-        /* Responsive Adjustments */
-        @media screen and (max-width: 980px) {
-            .pricing-container {
-                gap: 1.5em;
-            }
-
-            .pricing-tier {
-                padding: 1.5em;
-            }
-        }
-
-        @media screen and (max-width: 736px) {
-            .pricing-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .pricing-tier {
-                width: 100%;
-                max-width: 100%;
-                margin-bottom: 1.5em;
-            }
-
-            .pricing-tier.featured {
-                transform: none;
-                order: -1;
-            }
-
-            .pricing-tier.featured:hover {
-                transform: translateY(-10px);
-            }
-
-            .comparison-table {
-                font-size: 0.9em;
-            }
-
-            .comparison-table th,
-            .comparison-table td {
-                padding: 0.75em 0.5em;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/services.css">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="assets/css/services.css" as="style">
+    <link rel="preload" href="assets/js/jquery.min.js" as="script">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -451,15 +24,15 @@
     <link rel="mask-icon" href="images/icon-192-maskable.png">
 
     <!-- Open Graph Meta Tags (for social sharing) -->
-    <meta property="og:title" content="OccuHelp - Services & Pricing">
-    <meta property="og:description" content="OccuHelp subscription plans and pricing for workplace safety and health management software solutions.">
+    <meta property="og:title" content="OccuHelp - Services">
+    <meta property="og:description" content="OccuHelp software tools and services for workplace safety, risk analysis, prevention, medical management, and operations.">
     <meta property="og:image" content="https://www.occuhelp.com/images/OH-Social.png">
     <meta property="og:url" content="https://www.occuhelp.com/services">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="OccuHelp - Services & Pricing">
-    <meta name="twitter:description" content="OccuHelp subscription plans and pricing for workplace safety and health management software solutions.">
+    <meta name="twitter:title" content="OccuHelp - Services">
+    <meta name="twitter:description" content="OccuHelp software tools and services for workplace safety, risk analysis, prevention, medical management, and operations.">
     <meta name="twitter:image" content="https://www.occuhelp.com/images/OH-Social.png">
 
     <!-- Google Analytics Tag -->
@@ -483,6 +56,8 @@
         });
     </script>
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="homepage is-preload">
@@ -493,7 +68,7 @@
             <div class="logo container">
                 <div>
                     <h1><a href="/" id="logo">OccuHelp</a></h1>
-                    <p>Services</p>
+                    <p>Software Services</p>
                 </div>
             </div>
         </header>
@@ -512,13 +87,14 @@
                     </ul>
                 </li>
                 <li class="current"><a href="services">Services</a></li>
+                <li><a href="pricing">Pricing</a></li>
                 <li><a href="faq">FAQ</a></li>
                 <li><a href="contact">Contact</a></li>
 
                 <!-- Button wrapped in a list item -->
-                    <li class="button-container">
-                        <a href="https://app.occuhelp.com" class="button scrolly" target="_blank">Login</a>
-                    </li>
+                <li class="button-container">
+                    <a href="https://app.occuhelp.com" class="button scrolly" target="_blank">Login</a>
+                </li>
             </ul>
         </nav>
 
@@ -531,311 +107,45 @@
                             <!-- Content -->
                             <article class="box page-content">
                                 <header>
-                                    <h2>OccuHelp Subscriptions</h2>
-                                    <p>We offer bulk pricing for all subscriptions</p>
+                                    <h2>Our Software Services</h2>
+                                    <p>Comprehensive tools for workplace safety and health management</p>
                                 </header>
 
-                                <section>
-                                    <div class="services-overview">
-                                        <h3>Use the calculator below to estimate your monthly cost</h3>
-                                        <p>We structure our pricing with a "minimum monthly bill" approach, allowing us to offer both <strong>bulk rates</strong> and <strong>prorated pricing</strong> as your subscription needs evolve. Every 12 months, we'll conduct a review of your per-user rates and adjust them downward when possible to ensure you always receive the most competitive pricing available.</p>
-                                    </div>
+                                <section class="services-intro">
+                                    <p>OccuHelp provides a comprehensive suite of software tools designed to streamline workplace safety, risk management, and occupational health operations. Our platform is organized into four main categories, each addressing critical aspects of workplace health and safety management.</p>
 
-                                    <!-- Pricing Calculator -->
-                                    <div class="calculator-container">
-                                        <form id="price-calculator" class="price-calculator">
-                                            <div class="calculator-inputs">
-                                                <div class="input-group">
-                                                    <label for="full-access-qty">Full Access Subscriptions:</label>
-                                                    <input type="number" id="full-access-qty" min="1" value="1">
-                                                </div>
-                                                <div class="input-group">
-                                                    <label for="viewer-only-qty">Viewer Only Subscriptions:</label>
-                                                    <input type="number" id="viewer-only-qty" min="0" value="0">
-                                                </div>
-                                                <div class="input-group">
-                                                    <label for="companies-qty">Companies Needed:</label>
-                                                    <input type="number" id="companies-qty" min="1" value="1">
-                                                    <p class="disclaimer">Note: Enter 1 for a single business use. For staffing services, enter number of clients. For parent companies, enter number of subsidiary businesses.</p>
-                                                </div>
-                                                <div class="input-group info">
-                                                    <div class="info-text">Account Management Fee Included</div>
-                                                </div>
-                                            </div>
-                                            <div class="calculator-results">
-                                                <div class="result-group">
-                                                    <div class="result-label">Monthly Total:</div>
-                                                    <div class="result-value" id="monthly-price">$0</div>
-                                                </div>
-                                                <div class="result-group">
-                                                    <div class="result-label">Annual Total:</div>
-                                                    <div class="result-value" id="annual-price">$0</div>
-                                                </div>
-                                                <div id="savings-section" class="result-group savings" style="display: none;">
-                                                    <div class="bill-layout">
-                                                        <div class="bill-row">
-                                                            <div class="bill-label">Non-Bulk Price:</div>
-                                                            <div class="bill-value crossed-out" id="standard-price">$0</div>
-                                                        </div>
-                                                        <div class="bill-row discount-row">
-                                                            <div class="bill-label"><span class="savings-badge" id="savings-percentage">0%</span>Discount:</div>
-                                                            <div class="bill-value discount-value">-<span id="savings-amount">$0</span></div>
-                                                        </div>
-                                                        <div class="bill-row total-row">
-                                                            <div class="bill-label">Your Price:</div>
-                                                            <div class="bill-value" id="final-price">$0</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bill-layout monthly-bill">
-                                                        <div class="bill-row">
-                                                            <div class="bill-label">Minimum Bill:</div>
-                                                            <div class="bill-value" id="monthly-price">$0</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-
-                                    <!-- Pricing Tiers -->
-                                    <div class="pricing-container">
-                                        <!-- Tier 1 -->
-                                        <div class="pricing-tier">
-                                            <div class="tier-header">
-                                                <div class="tier-name">Software Only</div>
-                                                <div class="tier-description">Comprehensive assortment of tools</div>
-                                                <div class="tier-price"> - </div>
-                                                <div class="tier-price-period">per user</div>
-                                            </div>
-                                            <ul class="tier-features">
-                                                <li>Risk analysis</li>
-                                                <li>Prevention</li>
-                                                <li>Medical EMR</li>
-                                                <li>Operations Management</li>
-                                                <li class="unavailable">Data Transfer on set-up</li>
-                                                <li class="unavailable">Full Management Support</li>
-                                            </ul>
-                                            <div class="tier-cta">
-                                                <a href="contact" class="button alt">Get Started</a>
+                                    <div class="services-highlights">
+                                        <div class="highlight-item">
+                                            <div class="highlight-icon"><i class="fas fa-chart-line"></i></div>
+                                            <div class="highlight-text">
+                                                <h3>Data-Driven Insights</h3>
+                                                <p>Make informed decisions with comprehensive analytics and reporting</p>
                                             </div>
                                         </div>
-
-                                        <!-- Tier 2 -->
-                                        <div class="pricing-tier featured">
-                                            <div class="tier-header">
-                                                <div class="tier-name">Software + Implementation</div>
-                                                <div class="tier-description">We'll set everything up for you</div>
-                                                <div class="tier-price"> - </div>
-                                                <div class="tier-price-period">per user</div>
-                                            </div>
-                                            <ul class="tier-features">
-                                                <li>All Company Plan features</li>
-                                                <li>Advanced risk assessment</li>
-                                                <li>Compliance monitoring</li>
-                                                <li>Up to 15 user accounts</li>
-                                                <li>Basic analytics dashboard</li>
-                                                <li class="unavailable">Full administrative access</li>
-                                            </ul>
-                                            <div class="tier-cta">
-                                                <a href="contact" class="button">Get Started</a>
+                                        <div class="highlight-item">
+                                            <div class="highlight-icon"><i class="fas fa-users"></i></div>
+                                            <div class="highlight-text">
+                                                <h3>Multi-Company Support</h3>
+                                                <p>Perfect for staffing services, parent companies, and subsidiaries</p>
                                             </div>
                                         </div>
-
-                                        <!-- Tier 3 -->
-                                        <div class="pricing-tier">
-                                            <div class="tier-header">
-                                                <div class="tier-name">Software + Implementation + Fully Managed</div>
-                                                <div class="tier-description">We'll set it up and manage it for you</div>
-                                                <div class="tier-price"> - </div>
-                                                <div class="tier-price-period">per user</div>
-                                            </div>
-                                            <ul class="tier-features">
-                                                <li>All Viewer Plan features</li>
-                                                <li>Unlimited user accounts</li>
-                                                <li>Advanced analytics & reporting</li>
-                                                <li>API integration capabilities</li>
-                                                <li>Custom workflow configuration</li>
-                                                <li>Priority technical support</li>
-                                            </ul>
-                                            <div class="tier-cta">
-                                                <a href="contact" class="button alt">Get Started</a>
+                                        <div class="highlight-item">
+                                            <div class="highlight-icon"><i class="fas fa-shield-alt"></i></div>
+                                            <div class="highlight-text">
+                                                <h3>Comprehensive Tools</h3>
+                                                <p>From risk analysis to medical management and operations</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <!-- Security Maintenance -->
-                                    <div class="services-overview">
-                                        <h3>Enterprise Security Maintenance</h3>
-                                        <p>For organizations with advanced security requirements, we offer an additional Security Maintenance package that can be added to any subscription tier.</p>
-                                        <div class="pricing-tier" style="max-width: 400px; margin: 2em auto;">
-                                            <div class="tier-header">
-                                                <div class="tier-name">Security Maintenance</div>
-                                                <div class="tier-description">Included with all purchases</div>
-                                                <div class="tier-price"> - </div>
-                                                <div class="tier-price-period">per month</div>
-                                            </div>
-                                            <ul class="tier-features">
-                                                <li>Advanced data encryption</li>
-                                                <li>Regular security audits</li>
-                                                <li>Organization-specific security policies</li>
-                                                <li>Dedicated security specialist</li>
-                                            </ul>
-                                            <div class="tier-cta">
-                                                <a href="contact" class="button alt">Contact Us</a>
-                                            </div>
+                                    <!-- Category Navigation -->
+                                    <div class="carousel-nav-container">
+                                        <div class="carousel-nav" role="tablist" aria-label="Service Categories">
+                                            <button id="tab-risk-analysis" class="category-nav active" data-category="risk-analysis" role="tab" aria-selected="true" aria-controls="risk-analysis">Risk Analysis</button>
+                                            <button class="category-nav" data-category="prevention" role="tab" aria-selected="false" aria-controls="prevention">Prevention</button>
+                                            <button class="category-nav" data-category="medical" role="tab" aria-selected="false" aria-controls="medical">Medical</button>
+                                            <button class="category-nav" data-category="operations" role="tab" aria-selected="false" aria-controls="operations">Operations</button>
                                         </div>
-                                    </div>
-
-                                    <!-- Comparison Toggle -->
-                                    <div class="comparison-toggle">
-                                        <button id="comparison-toggle">See Detailed Comparison</button>
-                                    </div>
-
-                                    <!-- Comparison Table (Hidden by default) -->
-                                    <div id="comparison-container" class="comparison-container">
-                                        <table class="comparison-table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Features</th>
-                                                    <th>Company<br>$30/mo</th>
-                                                    <th>Viewer<br>$75/mo</th>
-                                                    <th>Full Access<br>$175/mo</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <!-- Company Plan Features -->
-                                                <tr>
-                                                    <td>Basic risk assessment tools</td>
-                                                    <td><span class="check">✓</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Incident reporting system</td>
-                                                    <td><span class="check">✓</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Safety documentation storage</td>
-                                                    <td><span class="check">✓</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>User accounts</td>
-                                                    <td>Up to 5</td>
-                                                    <td>Up to 15</td>
-                                                    <td>Unlimited</td>
-                                                </tr>
-
-                                                <!-- Viewer Plan Features -->
-                                                <tr>
-                                                    <td>Advanced risk assessment</td>
-                                                    <td><span class="cross">×</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Compliance monitoring</td>
-                                                    <td><span class="cross">×</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Basic analytics dashboard</td>
-                                                    <td><span class="cross">×</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Data export capabilities</td>
-                                                    <td><span class="cross">×</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Email notifications</td>
-                                                    <td><span class="cross">×</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                </tr>
-
-                                                <!-- Full Access Plan Features -->
-                                                <tr>
-                                                    <td>Advanced analytics & reporting</td>
-                                                    <td><span class="cross">×</span></td>
-                                                    <td><span class="cross">×</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>API integration capabilities</td>
-                                                    <td><span class="cross">×</span></td>
-                                                    <td><span class="cross">×</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Custom workflow configuration</td>
-                                                    <td><span class="cross">×</span></td>
-                                                    <td><span class="cross">×</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Priority technical support</td>
-                                                    <td><span class="cross">×</span></td>
-                                                    <td><span class="cross">×</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Full administrative access</td>
-                                                    <td><span class="cross">×</span></td>
-                                                    <td><span class="cross">×</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>White-label options</td>
-                                                    <td><span class="cross">×</span></td>
-                                                    <td><span class="cross">×</span></td>
-                                                    <td><span class="check">✓</span></td>
-                                                </tr>
-
-                                                <!-- Security Maintenance -->
-                                                <tr>
-                                                    <td colspan="4" style="text-align: center; font-weight: bold; background-color: #f5f5f5;">Security Maintenance</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Advanced data encryption</td>
-                                                    <td>With add-on</td>
-                                                    <td>With add-on</td>
-                                                    <td>With add-on</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Regular security audits</td>
-                                                    <td>With add-on</td>
-                                                    <td>With add-on</td>
-                                                    <td>With add-on</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Custom security policies</td>
-                                                    <td>With add-on</td>
-                                                    <td>With add-on</td>
-                                                    <td>With add-on</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Dedicated security specialist</td>
-                                                    <td>With add-on</td>
-                                                    <td>With add-on</td>
-                                                    <td>With add-on</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-
-                                    <!-- CTA Section -->
-                                    <div class="cta-section">
-                                        <h3>Ready to enhance your workplace safety?</h3>
-                                        <p>Contact us today to discuss which plan is right for your organization or to schedule a demo.</p>
-                                        <a href="contact" class="button large">Contact Us</a>
                                     </div>
                                 </section>
                             </article>
@@ -845,45 +155,392 @@
             </div>
         </section>
 
-    <!-- Copyright -->
+        <!-- Services Carousel -->
+        <section class="carousel-container">
+            <!-- Loading Indicator (hidden after load) -->
+            <div id="carousel-loader" class="carousel-loader">
+                <div class="loader-spinner"></div>
+            </div>
+            <!-- Carousel Controls -->
+            <div class="carousel-controls">
+                <button class="carousel-arrow carousel-prev" aria-label="Previous category"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-arrow carousel-next" aria-label="Next category"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <!-- Risk Analysis Slide -->
+            <div id="risk-analysis" class="carousel-slide active" role="tabpanel" aria-labelledby="tab-risk-analysis">
+                <div class="container">
+                    <div class="category-header">
+                        <h2>Risk Analysis</h2>
+                        <p>Identify and assess workplace risks to prevent injuries before they occur</p>
+                    </div>
+
+                    <div class="category-content">
+                        <div class="category-description">
+                            <p>Our Risk Analysis tools help you identify potential hazards and assess their severity, allowing you to prioritize interventions and allocate resources effectively. From broad program evaluations to detailed task analyses, these tools provide a comprehensive framework for understanding and mitigating workplace risks.</p>
+
+                            <div class="dropdown-list" role="list">
+                                <div class="dropdown-item" role="listitem">
+                                    <div class="dropdown-header" role="button" aria-expanded="false" aria-controls="content-program-analysis">Program Analysis</div>
+                                    <div class="dropdown-content" id="content-program-analysis">
+                                        <p>Evaluate the effectiveness of your overall safety program with comprehensive assessments that identify strengths and areas for improvement. Track progress over time and benchmark against industry standards.</p>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-item">
+                                    <div class="dropdown-header">Site Analysis</div>
+                                    <div class="dropdown-content">
+                                        <p>Assess specific work locations for potential hazards and risk factors. Document site conditions, identify environmental concerns, and develop site-specific safety protocols.</p>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-item">
+                                    <div class="dropdown-header">Job Analysis</div>
+                                    <div class="dropdown-content">
+                                        <p>Break down job roles to identify associated risks and physical demands. Create detailed job profiles that inform hiring practices, accommodation strategies, and injury prevention efforts.</p>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-item">
+                                    <div class="dropdown-header">Task Analysis</div>
+                                    <div class="dropdown-content">
+                                        <p>Examine specific work tasks to identify ergonomic risk factors and potential injury mechanisms. Develop targeted interventions to reduce risk at the task level.</p>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-item">
+                                    <div class="dropdown-header">Risk Management</div>
+                                    <div class="dropdown-content">
+                                        <p>Track identified risks, implement control measures, and monitor their effectiveness. Maintain a comprehensive risk register and ensure continuous improvement in risk reduction.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-image">
+                            <div class="image-container">
+                                <img src="images/pic01.jpg" alt="Risk Analysis Dashboard">
+                                <div class="image-caption">Program Analysis Dashboard</div>
+                            </div>
+
+                            <div class="benefits-list">
+                                <h3>Key Benefits</h3>
+                                <ul>
+                                    <li>Identify high-risk areas before injuries occur</li>
+                                    <li>Prioritize interventions based on risk severity</li>
+                                    <li>Document compliance with safety regulations</li>
+                                    <li>Track risk reduction progress over time</li>
+                                    <li>Generate comprehensive risk assessment reports</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prevention Slide -->
+            <div id="prevention" class="carousel-slide">
+                <div class="container">
+                    <div class="category-header">
+                        <h2>Prevention</h2>
+                        <p>Proactive tools to prevent injuries and promote workplace wellness</p>
+                    </div>
+
+                    <div class="category-content">
+                        <div class="category-image">
+                            <div class="image-container">
+                                <img src="images/pic02.jpg" alt="Prevention Tools">
+                                <div class="image-caption">Ergonomics Assessment Tool</div>
+                            </div>
+
+                            <div class="benefits-list">
+                                <h3>Key Benefits</h3>
+                                <ul>
+                                    <li>Reduce workplace injuries through proactive measures</li>
+                                    <li>Improve employee health and wellbeing</li>
+                                    <li>Decrease workers' compensation costs</li>
+                                    <li>Increase productivity and reduce absenteeism</li>
+                                    <li>Create a culture of safety and prevention</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="category-description">
+                            <p>Our Prevention tools focus on proactive measures to prevent injuries before they occur. From ergonomic assessments to wellness programs and pre-employment testing, these tools help you create a healthier, safer workplace environment and reduce the risk of injuries and illnesses.</p>
+
+                            <div class="dropdown-list">
+                                <div class="dropdown-item">
+                                    <div class="dropdown-header">Prehab</div>
+                                    <div class="dropdown-content">
+                                        <p>Implement preventive rehabilitation programs targeting common injury areas. Develop customized exercise protocols and track employee participation and outcomes.</p>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-item">
+                                    <div class="dropdown-header">Wellness</div>
+                                    <div class="dropdown-content">
+                                        <p>Create and manage comprehensive wellness initiatives that address physical, mental, and emotional health. Track participation, measure outcomes, and demonstrate ROI.</p>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-item">
+                                    <div class="dropdown-header">Ergonomics</div>
+                                    <div class="dropdown-content">
+                                        <p>Conduct detailed ergonomic assessments, identify risk factors, and implement targeted interventions. Document workstation adjustments and track improvements over time.</p>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-item">
+                                    <div class="dropdown-header">Stretching & Strengthening</div>
+                                    <div class="dropdown-content">
+                                        <p>Design job-specific stretching and strengthening programs. Create visual guides, schedule group sessions, and monitor compliance and effectiveness.</p>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-item">
+                                    <div class="dropdown-header">Physical Demands Analysis</div>
+                                    <div class="dropdown-content">
+                                        <p>Document the physical requirements of specific job roles. Quantify force, frequency, and duration of tasks to inform hiring, accommodation, and return-to-work decisions.</p>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-item">
+                                    <div class="dropdown-header">Employment Testing</div>
+                                    <div class="dropdown-content">
+                                        <p>Design and administer pre-employment and post-offer testing protocols. Ensure job candidates can safely perform essential functions and document testing procedures.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Medical Slide -->
+            <div id="medical" class="carousel-slide">
+                <div class="container">
+                    <div class="category-header">
+                        <h2>Medical</h2>
+                        <p>Comprehensive tools for managing workplace injuries and health conditions</p>
+                    </div>
+
+                    <div class="category-content">
+                        <div class="category-description">
+                            <p>Our Medical tools provide a complete system for managing workplace injuries and health conditions. From self-care guidance to comprehensive case management, these tools help you respond effectively to health issues, minimize their impact, and facilitate successful return to work.</p>
+
+                            <div class="dropdown-list">
+                                <div class="dropdown-item">
+                                    <div class="dropdown-header">Self Care</div>
+                                    <div class="dropdown-content">
+                                        <p>Provide employees with guided self-care protocols for minor discomfort. Document self-care attempts and track outcomes to identify recurring issues that may require additional intervention.</p>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-item">
+                                    <div class="dropdown-header">Early Intervention</div>
+                                    <div class="dropdown-content">
+                                        <p>Implement rapid response protocols for emerging symptoms before they become recordable injuries. Track interventions and their effectiveness to refine your early response strategies.</p>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-item">
+                                    <div class="dropdown-header">Injury or Illness</div>
+                                    <div class="dropdown-content">
+                                        <p>Maintain comprehensive electronic medical records for workplace injuries and illnesses. Document assessments, treatments, restrictions, and follow-up care in a secure, HIPAA-compliant system.</p>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-item">
+                                    <div class="dropdown-header">MSK Rehab</div>
+                                    <div class="dropdown-content">
+                                        <p>Manage musculoskeletal rehabilitation programs with specialized tools for tracking progress, documenting exercises, and monitoring outcomes. Integrate with return-to-work planning.</p>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-item">
+                                    <div class="dropdown-header">Case Management</div>
+                                    <div class="dropdown-content">
+                                        <p>Coordinate all aspects of complex cases with comprehensive case management tools. Track appointments, communications, restrictions, accommodations, and return-to-work progress.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-image">
+                            <div class="image-container">
+                                <img src="images/pic03.jpg" alt="Medical Management">
+                                <div class="image-caption">Case Management Dashboard</div>
+                            </div>
+
+                            <div class="benefits-list">
+                                <h3>Key Benefits</h3>
+                                <ul>
+                                    <li>Maintain secure, HIPAA-compliant medical records</li>
+                                    <li>Streamline documentation and reporting</li>
+                                    <li>Improve case outcomes through consistent management</li>
+                                    <li>Facilitate effective return-to-work planning</li>
+                                    <li>Reduce duration and costs of workplace injuries</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Operations Slide -->
+            <div id="operations" class="carousel-slide">
+                <div class="container">
+                    <div class="category-header">
+                        <h2>Operations</h2>
+                        <p>Essential tools for managing safety operations and compliance</p>
+                    </div>
+
+                    <div class="category-content">
+                        <div class="category-image">
+                            <div class="image-container">
+                                <img src="images/pic04.jpg" alt="Operations Management">
+                                <div class="image-caption">OSHA Recordkeeping Dashboard</div>
+                            </div>
+
+                            <div class="benefits-list">
+                                <h3>Key Benefits</h3>
+                                <ul>
+                                    <li>Ensure regulatory compliance with automated tools</li>
+                                    <li>Streamline incident reporting and investigation</li>
+                                    <li>Maintain accurate safety documentation</li>
+                                    <li>Track safety performance metrics</li>
+                                    <li>Improve operational efficiency</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="category-description">
+                            <p>Our Operations tools help you manage the day-to-day aspects of workplace safety and compliance. From incident management to OSHA recordkeeping and inventory control, these tools streamline administrative tasks and ensure you meet regulatory requirements while maintaining efficient operations.</p>
+
+                            <div class="dropdown-list">
+                                <div class="dropdown-item">
+                                    <div class="dropdown-header">Incident Manager</div>
+                                    <div class="dropdown-content">
+                                        <p>Document, investigate, and track workplace incidents. Identify root causes, implement corrective actions, and generate comprehensive incident reports for internal and external stakeholders.</p>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-item">
+                                    <div class="dropdown-header">OSHA Recordkeeping</div>
+                                    <div class="dropdown-content">
+                                        <p>Maintain OSHA-compliant injury and illness records with automated tools for determining recordability. Generate OSHA 300, 300A, and 301 forms and track key safety metrics.</p>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-item">
+                                    <div class="dropdown-header">Safety Data Sheets</div>
+                                    <div class="dropdown-content">
+                                        <p>Manage your SDS library with tools for organizing, searching, and accessing safety data sheets. Ensure compliance with hazard communication standards and provide easy access to critical safety information.</p>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-item">
+                                    <div class="dropdown-header">Inventory</div>
+                                    <div class="dropdown-content">
+                                        <p>Track medical supplies, safety equipment, and other inventory items. Set reorder points, monitor usage patterns, and maintain appropriate stock levels to support your safety and health programs.</p>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-item">
+                                    <div class="dropdown-header">Quality Assurance</div>
+                                    <div class="dropdown-content">
+                                        <p>Implement quality control processes for your safety and health programs. Conduct audits, track performance metrics, and ensure consistent application of policies and procedures.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Multi-Company Support Section -->
+        <section class="multi-company-section">
+            <div class="container">
+                <div class="category-header">
+                    <h2>Multi-Company Support</h2>
+                    <p>Flexible solutions for diverse organizational structures</p>
+                </div>
+
+                <div class="container">
+                    <p style="text-align: center; max-width: 800px; margin: 0 auto 2em;">OccuHelp's platform is designed to accommodate various organizational structures with its flexible multi-company architecture. Whether you're a single organization, a parent company with subsidiaries, or a service provider managing multiple clients, our system adapts to your needs.</p>
+
+                    <div class="use-cases">
+                        <div class="dropdown-item">
+                            <div class="dropdown-header">Single Organizations</div>
+                            <div class="dropdown-content">
+                                <p>For businesses using the software for their own operations, you'll typically use just one company profile. This streamlines your experience while still giving you access to all the powerful tools in the platform.</p>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-item">
+                            <div class="dropdown-header">Parent Companies with Subsidiaries</div>
+                            <div class="dropdown-content">
+                                <p>If you oversee multiple subsidiary businesses, you can create a separate company profile for each entity. This allows you to maintain distinct data sets while still being able to generate consolidated reports and analytics across your entire organization.</p>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-item">
+                            <div class="dropdown-header">Occupational Health Service Providers</div>
+                            <div class="dropdown-content">
+                                <p>For organizations that provide occupational health staffing services, our platform allows you to create a separate company profile for each client you serve. This ensures complete data separation while giving you efficient tools to manage all your clients from a single interface.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="admin-features">
+                        <h3>Administrative Controls</h3>
+                        <p style="text-align: center;">Our comprehensive admin center gives you complete control over your system:</p>
+                        <ul class="admin-features-list">
+                            <li>Manage user accounts and permission levels</li>
+                            <li>Configure company-specific settings and preferences</li>
+                            <li>Customize forms and workflows to match your processes</li>
+                            <li>Control data access and visibility between companies</li>
+                            <li>Generate cross-company reports and analytics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to transform your workplace safety and health management?</h2>
+                    <p>Contact us today to learn more about our software services or to schedule a personalized demo.</p>
+                    <div class="cta-buttons">
+                        <a href="pricing" class="button large">View Pricing</a>
+                        <a href="contact" class="button alt large">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright -->
         <div id="copyright">
             <ul class="menu">
                 <li>&copy; <script>document.write(new Date().getFullYear());</script> OccuHelp. All rights reserved.</li>
             </ul>
         </div>
 
+    </div>
+
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/consent.js"></script>
-    <script src="assets/js/price-calculator.js"></script>
-    <script>
-        // Toggle comparison table visibility
-        document.addEventListener('DOMContentLoaded', function() {
-            const comparisonToggle = document.getElementById('comparison-toggle');
-            const comparisonContainer = document.getElementById('comparison-container');
+    <script src="assets/js/jquery.dropotron.min.js" defer></script>
+    <script src="assets/js/jquery.scrolly.min.js" defer></script>
+    <script src="assets/js/browser.min.js" defer></script>
+    <script src="assets/js/breakpoints.min.js" defer></script>
+    <script src="assets/js/util.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/consent.js" defer></script>
+    <script src="assets/js/services.js" defer></script>
 
-            if (comparisonToggle && comparisonContainer) {
-                comparisonToggle.addEventListener('click', function() {
-                    comparisonContainer.classList.toggle('open');
-                    comparisonToggle.classList.toggle('open');
-
-                    // Update button text
-                    if (comparisonContainer.classList.contains('open')) {
-                        comparisonToggle.textContent = 'Hide Detailed Comparison';
-                    } else {
-                        comparisonToggle.textContent = 'See Detailed Comparison';
-                    }
-                });
-            }
-        });
-    </script>
-
-    </div>
 </body>
 </html>

@@ -1,0 +1,872 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="OccuHelp subscription plans and pricing for workplace safety and health management software solutions.">
+    <meta name="keywords" content="Occupational Health Software, Injury Prevention, Risk Analysis, Pricing, Subscriptions">
+    <meta name="author" content="OccuHelp, LLC">
+    <title>OccuHelp - Pricing</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/consent.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/pricing.css">
+    <style>
+        /* Pricing Calculator Styles */
+        .calculator-container {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 2em;
+            margin: 2em 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .price-calculator {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+        }
+
+        .calculator-inputs {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .calculator-results {
+            flex: 1;
+            min-width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: #fff;
+            padding: 1.5em;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-group {
+            margin-bottom: 1.5em;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: 600;
+            color: #6b7770;
+        }
+
+        .input-group input[type="number"] {
+            width: 100%;
+            padding: 0.75em;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        .disclaimer {
+            font-size: 0.8em;
+            color: #777;
+            margin-top: 0.3em;
+            font-style: italic;
+            line-height: 1.3;
+        }
+
+        .input-group.info {
+            margin-top: 1em;
+        }
+
+        .input-group.info .info-text {
+            padding: 0.75em;
+            background-color: #f0f8f0;
+            border-radius: 4px;
+            color: #6b7770;
+            font-weight: 600;
+            text-align: center;
+            border-left: 3px solid #99d98c;
+        }
+
+        .result-group.savings {
+            margin-top: 2.5em;
+            padding-top: 1.5em;
+            border-top: 1px dashed #ddd;
+        }
+
+        .bill-layout {
+            width: 100%;
+            margin: 0 auto;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 1em;
+            background-color: #fafafa;
+        }
+
+        .bill-layout.monthly-bill {
+            margin-top: 1.5em;
+            background-color: #f0f8f0;
+            border-color: #d0e8d0;
+        }
+
+        .bill-layout.monthly-bill .bill-value {
+            color: #4a9e5c;
+            font-weight: 700;
+        }
+
+        .bill-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5em 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .bill-row:last-child {
+            border-bottom: none;
+        }
+
+        .bill-label {
+            font-weight: 600;
+            color: #6b7770;
+            display: flex;
+            align-items: center;
+        }
+
+        .bill-value {
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        .crossed-out {
+            text-decoration: line-through;
+            color: #999;
+            position: relative;
+        }
+
+        .discount-row {
+            color: #4a9e5c;
+        }
+
+        .discount-value {
+            color: #4a9e5c;
+        }
+
+        .total-row {
+            margin-top: 0.5em;
+            padding-top: 0.5em;
+            border-top: 2px solid #eee;
+            border-bottom: none;
+            font-size: 1.1em;
+        }
+
+        .total-row .bill-value {
+            font-size: 1.2em;
+            font-weight: 700;
+            color: #99d98c;
+        }
+
+        .savings-badge {
+            background-color: #4a9e5c;
+            color: white;
+            font-weight: 600;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-size: 0.8em;
+            margin-right: 0.5em;
+        }
+
+        #savings-amount {
+            font-weight: 600;
+        }
+
+        .result-group {
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        .result-label {
+            font-weight: 600;
+            color: #6b7770;
+            margin-bottom: 0.5em;
+        }
+
+        .result-value {
+            font-size: 2em;
+            font-weight: 700;
+            color: #99d98c;
+        }
+
+        @media screen and (max-width: 736px) {
+            .price-calculator {
+                flex-direction: column;
+            }
+
+            .calculator-results {
+                padding: 1em;
+            }
+
+            .result-value {
+                font-size: 1.75em;
+            }
+        }
+
+        /* Pricing Tiers Styles */
+        .pricing-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2em;
+            margin: 2em 0;
+        }
+
+        .pricing-tier {
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            padding: 2em;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-tier:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .pricing-tier.featured {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            border: 2px solid #99d98c;
+        }
+
+        .pricing-tier.featured:hover {
+            transform: scale(1.05) translateY(-10px);
+        }
+
+        .tier-header {
+            text-align: center;
+            padding-bottom: 1.5em;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 1.5em;
+        }
+
+        .tier-name {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 0.5em;
+            color: #6b7770;
+        }
+
+        .tier-description {
+            font-size: 0.9em;
+            color: #888;
+            margin-bottom: 1em;
+        }
+
+        .tier-price {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #99d98c;
+            margin-bottom: 0.2em;
+        }
+
+        .tier-price-period {
+            font-size: 0.9em;
+            color: #999;
+        }
+
+        .tier-features {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .tier-features li {
+            padding: 0.75em 0;
+            border-bottom: 1px solid #f5f5f5;
+            display: flex;
+            align-items: center;
+        }
+
+        .tier-features li:before {
+            content: "✓";
+            color: #99d98c;
+            font-weight: bold;
+            margin-right: 0.75em;
+        }
+
+        .tier-features li.unavailable {
+            color: #ccc;
+        }
+
+        .tier-features li.unavailable:before {
+            content: "×";
+            color: #ddd;
+        }
+
+        .tier-cta {
+            text-align: center;
+            margin-top: 2em;
+        }
+
+        /* Comparison Table */
+        .comparison-container {
+            margin: 3em 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            max-height: 0;
+        }
+
+        .comparison-container.open {
+            max-height: 2000px;
+        }
+
+        .comparison-toggle {
+            text-align: center;
+            margin: 2em 0;
+        }
+
+        .comparison-toggle button {
+            background: none;
+            border: none;
+            color: #99d98c;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 0.5em 1em;
+            transition: color 0.3s ease;
+        }
+
+        .comparison-toggle button:hover {
+            color: #6b7770;
+        }
+
+        .comparison-toggle button:after {
+            content: "";
+            display: inline-block;
+            width: 0.8em;
+            height: 0.8em;
+            margin-left: 0.5em;
+            border-right: 2px solid #99d98c;
+            border-bottom: 2px solid #99d98c;
+            transform: rotate(45deg);
+            transition: transform 0.3s ease;
+        }
+
+        .comparison-toggle button.open:after {
+            transform: rotate(-135deg);
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2em 0;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1em;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .comparison-table th {
+            background-color: #f9f9f9;
+            font-weight: 700;
+            color: #6b7770;
+        }
+
+        .comparison-table th:first-child,
+        .comparison-table td:first-child {
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .comparison-table .check {
+            color: #99d98c;
+            font-size: 1.2em;
+        }
+
+        .comparison-table .cross {
+            color: #ccc;
+            font-size: 1.2em;
+        }
+
+        /* Responsive Adjustments */
+        @media screen and (max-width: 980px) {
+            .pricing-container {
+                gap: 1.5em;
+            }
+
+            .pricing-tier {
+                padding: 1.5em;
+            }
+        }
+
+        @media screen and (max-width: 736px) {
+            .pricing-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .pricing-tier {
+                width: 100%;
+                max-width: 100%;
+                margin-bottom: 1.5em;
+            }
+
+            .pricing-tier.featured {
+                transform: none;
+                order: -1;
+            }
+
+            .pricing-tier.featured:hover {
+                transform: translateY(-10px);
+            }
+
+            .comparison-table {
+                font-size: 0.9em;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 0.75em 0.5em;
+            }
+        }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon-32x32.ico" sizes="32x32" type="image/ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="mask-icon" href="images/icon-192-maskable.png">
+
+    <!-- Open Graph Meta Tags (for social sharing) -->
+    <meta property="og:title" content="OccuHelp - Pricing">
+    <meta property="og:description" content="OccuHelp subscription plans and pricing for workplace safety and health management software solutions.">
+    <meta property="og:image" content="https://www.occuhelp.com/images/OH-Social.png">
+    <meta property="og:url" content="https://www.occuhelp.com/pricing">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="OccuHelp - Pricing">
+    <meta name="twitter:description" content="OccuHelp subscription plans and pricing for workplace safety and health management software solutions.">
+    <meta name="twitter:image" content="https://www.occuhelp.com/images/OH-Social.png">
+
+    <!-- Google Analytics Tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JS564X2EC0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        // Default consent mode - will be updated based on user choice
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied'
+        });
+
+        // Enhanced measurement settings
+        gtag('config', 'G-JS564X2EC0', {
+            'send_page_view': true,
+            'cookie_domain': 'occuhelp.com',
+            'anonymize_ip': true
+        });
+    </script>
+
+</head>
+
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+
+    <!-- Header -->
+        <header id="header">
+            <div class="logo container">
+                <div>
+                    <h1><a href="/" id="logo">OccuHelp</a></h1>
+                    <p>Pricing</p>
+                </div>
+            </div>
+        </header>
+
+    <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li>
+                    <a href="about">About Us</a>
+                    <ul>
+                        <li><a href="visionmission">Vision & Mission</a></li>
+                        <li><a href="corevalues">Core Values</a></li>
+                        <li><a href="decisionmaking">Decision Making</a></li>
+                        <li><a href="ourstory">Our Story</a></li>
+                    </ul>
+                </li>
+                <li><a href="services">Services</a></li>
+                <li class="current"><a href="pricing">Pricing</a></li>
+                <li><a href="faq">FAQ</a></li>
+                <li><a href="contact">Contact</a></li>
+
+                <!-- Button wrapped in a list item -->
+                    <li class="button-container">
+                        <a href="https://app.occuhelp.com" class="button scrolly" target="_blank">Login</a>
+                    </li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <section id="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <!-- Content -->
+                            <article class="box page-content">
+                                <header>
+                                    <h2>OccuHelp Subscriptions</h2>
+                                    <p>We offer bulk pricing for all subscriptions</p>
+                                </header>
+
+                                <section>
+                                    <div class="pricing-overview">
+                                        <h3>Use the calculator below to estimate your monthly cost</h3>
+                                        <p>We structure our pricing with a "minimum monthly bill" approach, allowing us to offer both <strong>bulk rates</strong> and <strong>prorated pricing</strong> as your subscription needs evolve. Every 12 months, we'll conduct a review of your per-user rates and adjust them downward when possible to ensure you always receive the most competitive pricing available.</p>
+                                    </div>
+
+                                    <!-- Pricing Calculator -->
+                                    <div class="calculator-container">
+                                        <form id="price-calculator" class="price-calculator">
+                                            <div class="calculator-inputs">
+                                                <div class="input-group">
+                                                    <label for="full-access-qty">Full Access Subscriptions:</label>
+                                                    <input type="number" id="full-access-qty" min="1" value="1">
+                                                </div>
+                                                <div class="input-group">
+                                                    <label for="viewer-only-qty">Viewer Only Subscriptions:</label>
+                                                    <input type="number" id="viewer-only-qty" min="0" value="0">
+                                                </div>
+                                                <div class="input-group">
+                                                    <label for="companies-qty">Companies Needed:</label>
+                                                    <input type="number" id="companies-qty" min="1" value="1">
+                                                    <p class="disclaimer">Note: Enter 1 for a single business use. For staffing services, enter number of clients. For parent companies, enter number of subsidiary businesses.</p>
+                                                </div>
+                                                <div class="input-group info">
+                                                    <div class="info-text">Account Management Fee Included</div>
+                                                </div>
+                                            </div>
+                                            <div class="calculator-results">
+                                                <div class="result-group">
+                                                    <div class="result-label">Monthly Total:</div>
+                                                    <div class="result-value" id="monthly-price">$0</div>
+                                                </div>
+                                                <div class="result-group">
+                                                    <div class="result-label">Annual Total:</div>
+                                                    <div class="result-value" id="annual-price">$0</div>
+                                                </div>
+                                                <div id="savings-section" class="result-group savings" style="display: none;">
+                                                    <div class="bill-layout">
+                                                        <div class="bill-row">
+                                                            <div class="bill-label">Non-Bulk Price:</div>
+                                                            <div class="bill-value crossed-out" id="standard-price">$0</div>
+                                                        </div>
+                                                        <div class="bill-row discount-row">
+                                                            <div class="bill-label"><span class="savings-badge" id="savings-percentage">0%</span>Discount:</div>
+                                                            <div class="bill-value discount-value">-<span id="savings-amount">$0</span></div>
+                                                        </div>
+                                                        <div class="bill-row total-row">
+                                                            <div class="bill-label">Your Price:</div>
+                                                            <div class="bill-value" id="final-price">$0</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bill-layout monthly-bill">
+                                                        <div class="bill-row">
+                                                            <div class="bill-label">Minimum Bill:</div>
+                                                            <div class="bill-value" id="monthly-price">$0</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <!-- Pricing Tiers -->
+                                    <div class="pricing-container">
+                                        <!-- Tier 1 -->
+                                        <div class="pricing-tier">
+                                            <div class="tier-header">
+                                                <div class="tier-name">Software Only</div>
+                                                <div class="tier-description">Comprehensive assortment of tools</div>
+                                                <div class="tier-price"> - </div>
+                                                <div class="tier-price-period">per user</div>
+                                            </div>
+                                            <ul class="tier-features">
+                                                <li>Risk analysis</li>
+                                                <li>Prevention</li>
+                                                <li>Medical EMR</li>
+                                                <li>Operations Management</li>
+                                                <li class="unavailable">Data Transfer on set-up</li>
+                                                <li class="unavailable">Full Management Support</li>
+                                            </ul>
+                                            <div class="tier-cta">
+                                                <a href="contact" class="button alt">Get Started</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Tier 2 -->
+                                        <div class="pricing-tier featured">
+                                            <div class="tier-header">
+                                                <div class="tier-name">Software + Implementation</div>
+                                                <div class="tier-description">We'll set everything up for you</div>
+                                                <div class="tier-price"> - </div>
+                                                <div class="tier-price-period">per user</div>
+                                            </div>
+                                            <ul class="tier-features">
+                                                <li>All Company Plan features</li>
+                                                <li>Advanced risk assessment</li>
+                                                <li>Compliance monitoring</li>
+                                                <li>Up to 15 user accounts</li>
+                                                <li>Basic analytics dashboard</li>
+                                                <li class="unavailable">Full administrative access</li>
+                                            </ul>
+                                            <div class="tier-cta">
+                                                <a href="contact" class="button">Get Started</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Tier 3 -->
+                                        <div class="pricing-tier">
+                                            <div class="tier-header">
+                                                <div class="tier-name">Software + Implementation + Fully Managed</div>
+                                                <div class="tier-description">We'll set it up and manage it for you</div>
+                                                <div class="tier-price"> - </div>
+                                                <div class="tier-price-period">per user</div>
+                                            </div>
+                                            <ul class="tier-features">
+                                                <li>All Viewer Plan features</li>
+                                                <li>Unlimited user accounts</li>
+                                                <li>Advanced analytics & reporting</li>
+                                                <li>API integration capabilities</li>
+                                                <li>Custom workflow configuration</li>
+                                                <li>Priority technical support</li>
+                                            </ul>
+                                            <div class="tier-cta">
+                                                <a href="contact" class="button alt">Get Started</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Security Maintenance -->
+                                    <div class="pricing-overview">
+                                        <h3>Enterprise Security Maintenance</h3>
+                                        <p>For organizations with advanced security requirements, we offer an additional Security Maintenance package that can be added to any subscription tier.</p>
+                                        <div class="pricing-tier" style="max-width: 400px; margin: 2em auto;">
+                                            <div class="tier-header">
+                                                <div class="tier-name">Security Maintenance</div>
+                                                <div class="tier-description">Included with all purchases</div>
+                                                <div class="tier-price"> - </div>
+                                                <div class="tier-price-period">per month</div>
+                                            </div>
+                                            <ul class="tier-features">
+                                                <li>Advanced data encryption</li>
+                                                <li>Regular security audits</li>
+                                                <li>Organization-specific security policies</li>
+                                                <li>Dedicated security specialist</li>
+                                            </ul>
+                                            <div class="tier-cta">
+                                                <a href="contact" class="button alt">Contact Us</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Comparison Toggle -->
+                                    <div class="comparison-toggle">
+                                        <button id="comparison-toggle">See Detailed Comparison</button>
+                                    </div>
+
+                                    <!-- Comparison Table (Hidden by default) -->
+                                    <div id="comparison-container" class="comparison-container">
+                                        <table class="comparison-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Features</th>
+                                                    <th>Company<br>$30/mo</th>
+                                                    <th>Viewer<br>$75/mo</th>
+                                                    <th>Full Access<br>$175/mo</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Company Plan Features -->
+                                                <tr>
+                                                    <td>Basic risk assessment tools</td>
+                                                    <td><span class="check">✓</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Incident reporting system</td>
+                                                    <td><span class="check">✓</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Safety documentation storage</td>
+                                                    <td><span class="check">✓</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>User accounts</td>
+                                                    <td>Up to 5</td>
+                                                    <td>Up to 15</td>
+                                                    <td>Unlimited</td>
+                                                </tr>
+
+                                                <!-- Viewer Plan Features -->
+                                                <tr>
+                                                    <td>Advanced risk assessment</td>
+                                                    <td><span class="cross">×</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Compliance monitoring</td>
+                                                    <td><span class="cross">×</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Basic analytics dashboard</td>
+                                                    <td><span class="cross">×</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Data export capabilities</td>
+                                                    <td><span class="cross">×</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Email notifications</td>
+                                                    <td><span class="cross">×</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                </tr>
+
+                                                <!-- Full Access Plan Features -->
+                                                <tr>
+                                                    <td>Advanced analytics & reporting</td>
+                                                    <td><span class="cross">×</span></td>
+                                                    <td><span class="cross">×</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>API integration capabilities</td>
+                                                    <td><span class="cross">×</span></td>
+                                                    <td><span class="cross">×</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Custom workflow configuration</td>
+                                                    <td><span class="cross">×</span></td>
+                                                    <td><span class="cross">×</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Priority technical support</td>
+                                                    <td><span class="cross">×</span></td>
+                                                    <td><span class="cross">×</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Full administrative access</td>
+                                                    <td><span class="cross">×</span></td>
+                                                    <td><span class="cross">×</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>White-label options</td>
+                                                    <td><span class="cross">×</span></td>
+                                                    <td><span class="cross">×</span></td>
+                                                    <td><span class="check">✓</span></td>
+                                                </tr>
+
+                                                <!-- Security Maintenance -->
+                                                <tr>
+                                                    <td colspan="4" style="text-align: center; font-weight: bold; background-color: #f5f5f5;">Security Maintenance</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Advanced data encryption</td>
+                                                    <td>With add-on</td>
+                                                    <td>With add-on</td>
+                                                    <td>With add-on</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Regular security audits</td>
+                                                    <td>With add-on</td>
+                                                    <td>With add-on</td>
+                                                    <td>With add-on</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Custom security policies</td>
+                                                    <td>With add-on</td>
+                                                    <td>With add-on</td>
+                                                    <td>With add-on</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Dedicated security specialist</td>
+                                                    <td>With add-on</td>
+                                                    <td>With add-on</td>
+                                                    <td>With add-on</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <!-- CTA Section -->
+                                    <div class="cta-section">
+                                        <h3>Ready to enhance your workplace safety?</h3>
+                                        <p>Contact us today to discuss which plan is right for your organization or to schedule a demo.</p>
+                                        <a href="contact" class="button large">Contact Us</a>
+                                    </div>
+                                </section>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Copyright -->
+        <div id="copyright">
+            <ul class="menu">
+                <li>&copy; <script>document.write(new Date().getFullYear());</script> OccuHelp. All rights reserved.</li>
+            </ul>
+        </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/consent.js"></script>
+    <script src="assets/js/price-calculator.js"></script>
+    <script src="assets/js/pricing.js"></script>
+
+
+    </div>
+</body>
+</html>

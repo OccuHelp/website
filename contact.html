@@ -85,6 +85,7 @@
 					</ul>
 				</li>
 				<li><a href="services">Services</a></li>
+				<li><a href="pricing">Pricing</a></li>
 				<li><a href="faq">FAQ</a></li>
 				<li class="current"><a href="contact">Contact</a></li>
 
@@ -103,7 +104,7 @@
 						<div class="contact-container">
 							<div class="contact-header">
 								<h2>Get in Touch</h2>
-								<p>Have questions about our services or want to learn more about how OccuHelp can help your organization? We'd love to hear from you.</p>
+								<p>Have questions about our pricing or want to learn more about how OccuHelp can help your organization? We'd love to hear from you.</p>
 							</div>
 						</div>
 					</div>
@@ -178,7 +179,13 @@
 								There was a problem submitting your message. Please try again.
 							</div>
 
-							<form id="contact-form">
+							<form id="contact-form" action="https://formsubmit.co/ajax/bda9876c1a85b7ec68d41c91b0ac5d30" method="POST">
+                                        <!-- FormSubmit.co configuration -->
+                                        <input type="hidden" name="_subject" value="New Contact Form Submission from OccuHelp Website">
+                                        <input type="hidden" name="_template" value="table">
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <input type="text" name="_honey" style="display:none">
+                                        <input type="hidden" name="_autoresponse" value="Thank you for contacting OccuHelp. We've received your message and will get back to you shortly.">
 								<div class="row gtr-50">
 									<div class="col-6 col-12-small">
 										<div class="form-group required">
@@ -195,7 +202,7 @@
 									<div class="col-6 col-12-small">
 										<div class="form-group">
 											<label for="phone">Phone</label>
-											<input type="tel" id="phone" name="phone" placeholder="Your phone number (optional)">
+											<input type="tel" id="phone" name="phone" placeholder="Your phone number">
 										</div>
 									</div>
 									<div class="col-6 col-12-small">
@@ -212,7 +219,7 @@
 										</div>
 									</div>
 									<div class="col-12">
-										<div class="form-group required">
+										<div class="form-group">
 											<label for="message">Message</label>
 											<textarea id="message" name="message" placeholder="Your message"></textarea>
 										</div>

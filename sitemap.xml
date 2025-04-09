@@ -91,6 +91,18 @@
     </image:image>
   </url>
 
+  <!-- Pricing -->
+  <url>
+    <loc>https://www.occuhelp.com/pricing</loc>
+    <lastmod>2023-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.occuhelp.com/images/pic05.jpg</image:loc>
+      <image:title>OccuHelp Pricing</image:title>
+    </image:image>
+  </url>
+
   <!-- FAQ -->
   <url>
     <loc>https://www.occuhelp.com/faq</loc>
