@@ -62,7 +62,7 @@
 
     // Handle necessary cookies only
     function acceptNecessaryCookies() {
-        setCookie('cookie_consent', 'necessary', 365);
+        setCookie('cookie_consent', 'necessary', 1);
 
         // Keep Google Analytics consent as denied
         if (typeof gtag === 'function') {
