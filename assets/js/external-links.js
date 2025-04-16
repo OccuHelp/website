@@ -2,6 +2,7 @@
  * External Links File
  * Centralized management of all external links for the website
  * Created: 2023-11-07
+ * Last Modified: 2024-04-15
  *
  * This file contains all external links used throughout the website.
  * Update the URLs here to change them across the entire site.
@@ -51,9 +52,15 @@ document.addEventListener('DOMContentLoaded', function() {
         "get-started": "#",
         "free-trial": "#",
         "demo": "#",
-        "download": "#",
+        "download": "assets/resources/Business_Associate_Agreement.pdf",
         "login": "https://app.occuhelp.com",
         "video-summary": "https://www.youtube.com",
+
+        // Resource Links
+        "overview-pdf": "assets/resources/OccuHelp_Overview_2025.pdf",
+        "video-tutorials": "https://www.youtube.com",
+        "system-set-up": "assets/resources/OccuHelp_Set_Up.pdf",
+        "white-paper": "assets/resources/OccuHelp_White_Paper_2025.pdf",
 
         // Blog Links
         "self-care-monitoring": "#",

@@ -10,7 +10,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://www.occuhelp.com/</loc>
-    <lastmod>2023-12-15</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -22,7 +22,7 @@
   <!-- About Us -->
   <url>
     <loc>https://www.occuhelp.com/about</loc>
-    <lastmod>2023-12-15</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -34,7 +34,7 @@
   <!-- Vision & Mission -->
   <url>
     <loc>https://www.occuhelp.com/visionmission</loc>
-    <lastmod>2023-12-15</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -46,7 +46,7 @@
   <!-- Core Values -->
   <url>
     <loc>https://www.occuhelp.com/corevalues</loc>
-    <lastmod>2023-12-15</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -58,7 +58,7 @@
   <!-- Decision Making -->
   <url>
     <loc>https://www.occuhelp.com/decisionmaking</loc>
-    <lastmod>2023-12-15</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -70,7 +70,7 @@
   <!-- Our Story -->
   <url>
     <loc>https://www.occuhelp.com/ourstory</loc>
-    <lastmod>2023-12-15</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -82,7 +82,7 @@
   <!-- Services -->
   <url>
     <loc>https://www.occuhelp.com/services</loc>
-    <lastmod>2023-12-15</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -94,7 +94,7 @@
   <!-- Pricing -->
   <url>
     <loc>https://www.occuhelp.com/pricing</loc>
-    <lastmod>2023-12-15</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -106,7 +106,7 @@
   <!-- FAQ -->
   <url>
     <loc>https://www.occuhelp.com/faq</loc>
-    <lastmod>2023-12-15</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -114,7 +114,7 @@
   <!-- Contact -->
   <url>
     <loc>https://www.occuhelp.com/contact</loc>
-    <lastmod>2023-12-15</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
