@@ -7,7 +7,7 @@
 #banner .content .subtitle {
     font-size: 0.6em;
     display: block;
-    color: #99d98c;
+    color: #0096C7;
     margin-top: 0.2em;
 }
 
@@ -18,6 +18,17 @@
 
 .button:hover {
     transform: translateY(-2px);
+}
+
+/* Login button in navigation */
+#nav .button-container .button {
+    background: #0077B6; /* Lighter blue for better contrast */
+    color: #ffffff;
+    font-weight: 800; /* Extra bold */
+    letter-spacing: 0.05em; /* Slightly increase letter spacing */
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); /* Add subtle text shadow for better readability */
+    padding: 0.4em 1.2em; /* Reduced padding to make button shorter */
+    line-height: 1; /* Ensure consistent height */
 }
 
 /* Improved feature boxes */
@@ -32,20 +43,20 @@
 
 /* Improved accessibility for focus states */
 a:focus, button:focus, input:focus, textarea:focus, select:focus {
-    outline: 2px solid #99d98c;
+    outline: 2px solid #0096C7;
     outline-offset: 2px;
 }
 
 /* Improved mobile navigation */
 @media screen and (max-width: 736px) {
     #titleBar .toggle:before {
-        background: #99d98c;
+        background: #023E8A;
     }
-    
+
     #navPanel {
         background-color: rgba(255, 255, 255, 0.95);
     }
-    
+
     #navPanel .link {
         border-top: solid 1px rgba(107, 119, 112, 0.1);
     }
@@ -56,17 +67,17 @@ a:focus, button:focus, input:focus, textarea:focus, select:focus {
     #nav, #banner, #footer, #copyright {
         display: none;
     }
-    
+
     body {
         color: #000;
         background: #fff;
     }
-    
+
     a {
         color: #000;
         text-decoration: underline;
     }
-    
+
     .container {
         width: 100%;
         max-width: 100%;

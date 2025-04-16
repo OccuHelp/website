@@ -77,23 +77,23 @@
 	<!-- Nav -->
 		<nav id="nav">
 			<ul>
-				<li><a href="/">Home</a></li>
-				<li class="current"><a href="about">About Us</a>
+				<li><a href="/" data-link="home">Home</a></li>
+				<li class="current"><a href="about" data-link="about">About Us</a>
 					<ul>
-						<li><a href="visionmission">Vision & Mission</a></li>
-						<li><a href="corevalues">Core Values</a></li>
-						<li class="current"><a href="decisionmaking">Decision Making</a></li>
-						<li><a href="ourstory">Our Story</a></li>
+						<li><a href="visionmission" data-link="vision-mission">Vision & Mission</a></li>
+						<li><a href="corevalues" data-link="core-values">Core Values</a></li>
+						<li class="current"><a href="decisionmaking" data-link="decision-making">Decision Making</a></li>
+						<li><a href="ourstory" data-link="our-story">Our Story</a></li>
 					</ul>
 				</li>
-				<li><a href="services">Services</a></li>
-				<li><a href="pricing">Pricing</a></li>
-				<li><a href="faq">FAQ</a></li>
-				<li><a href="contact">Contact</a></li>
+				<li><a href="services" data-link="services">Services</a></li>
+				<li><a href="pricing" data-link="pricing">Pricing</a></li>
+				<li><a href="faq" data-link="faq">FAQ</a></li>
+				<li><a href="contact" data-link="contact">Contact</a></li>
 
 				<!-- Button wrapped in a list item -->
 					<li class="button-container">
-						<a href="https://app.occuhelp.com" class="button scrolly" target="_blank">Login</a>
+						<a href="https://app.occuhelp.com" data-link="login" class="button scrolly" target="_blank">Login</a>
 					</li>
 			</ul>
 		</nav>
@@ -245,10 +245,10 @@
 
 
  <!-- Copyright -->
-
+<!-- The placeholder text below will be replaced by the JavaScript in copyright.js when the page loads -->
 	<div id="copyright">
  		<ul class="menu">
-			<li>&copy; <script>document.write(new Date().getFullYear());</script> OccuHelp. All rights reserved.</li>
+			<li class="copyright-container">© 2023 OccuHelp. All rights reserved.</li>
 		</ul>
 	</div>
 
@@ -261,6 +261,8 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/consent.js"></script>
+	<script src="assets/js/copyright.js"></script>
+	<script src="assets/js/external-links.js"></script>
 
 	</div>
 </body>

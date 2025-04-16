@@ -48,13 +48,13 @@
     content: '\f078';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
-    color: #99d98c;
+    color: #0096C7;
     transition: transform 0.2s ease;
     will-change: transform;
 }
 
 .faq-item.active .faq-question {
-    background-color: #f0f5f0;
+    background-color: #EBF4FA;
 }
 
 .faq-item.active .faq-question::after {
@@ -87,7 +87,7 @@
 }
 
 .faq-sidebar {
-    background-color: #f0f5f0;
+    background-color: #EBF4FA;
     padding: 1.5em;
     border-radius: 8px;
     margin-bottom: 2em;
@@ -96,7 +96,7 @@
 .faq-sidebar h3 {
     margin-top: 0;
     color: #6b7770;
-    border-bottom: 2px solid #99d98c;
+    border-bottom: 2px solid #023E8A;
     padding-bottom: 0.5em;
     margin-bottom: 1em;
 }
@@ -120,11 +120,11 @@
 }
 
 .faq-sidebar ul li a:hover {
-    color: #99d98c;
+    color: #0096C7;
 }
 
 .faq-sidebar ul li.active a {
-    color: #99d98c;
+    color: #0096C7;
     font-weight: bold;
 }
 

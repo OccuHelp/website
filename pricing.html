@@ -78,12 +78,12 @@
 
         .input-group.info .info-text {
             padding: 0.75em;
-            background-color: #f0f8f0;
+            background-color: #E3F2FC;
             border-radius: 4px;
             color: #6b7770;
             font-weight: 600;
             text-align: center;
-            border-left: 3px solid #99d98c;
+            border-left: 3px solid #023E8A;
         }
 
         .result-group.savings {
@@ -103,12 +103,12 @@
 
         .bill-layout.monthly-bill {
             margin-top: 1.5em;
-            background-color: #f0f8f0;
-            border-color: #d0e8d0;
+            background-color: #EBF4FA;
+            border-color: #CCE8FC;
         }
 
         .bill-layout.monthly-bill .bill-value {
-            color: #4a9e5c;
+            color: #0077B6;
             font-weight: 700;
         }
 
@@ -143,11 +143,11 @@
         }
 
         .discount-row {
-            color: #4a9e5c;
+            color: #0077B6;
         }
 
         .discount-value {
-            color: #4a9e5c;
+            color: #0077B6;
         }
 
         .total-row {
@@ -161,11 +161,11 @@
         .total-row .bill-value {
             font-size: 1.2em;
             font-weight: 700;
-            color: #99d98c;
+            color: #023E8A;
         }
 
         .savings-badge {
-            background-color: #4a9e5c;
+            background-color: #0077B6;
             color: white;
             font-weight: 600;
             padding: 0.2em 0.4em;
@@ -192,7 +192,7 @@
         .result-value {
             font-size: 2em;
             font-weight: 700;
-            color: #99d98c;
+            color: #023E8A;
         }
 
         @media screen and (max-width: 736px) {
@@ -239,7 +239,7 @@
         .pricing-tier.featured {
             transform: scale(1.05);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-            border: 2px solid #99d98c;
+            border: 2px solid #023E8A;
         }
 
         .pricing-tier.featured:hover {
@@ -269,7 +269,7 @@
         .tier-price {
             font-size: 2.5em;
             font-weight: 700;
-            color: #99d98c;
+            color: #023E8A;
             margin-bottom: 0.2em;
         }
 
@@ -293,7 +293,7 @@
 
         .tier-features li:before {
             content: "✓";
-            color: #99d98c;
+            color: #0096C7;
             font-weight: bold;
             margin-right: 0.75em;
         }
@@ -332,7 +332,7 @@
         .comparison-toggle button {
             background: none;
             border: none;
-            color: #99d98c;
+            color: #0096C7;
             font-weight: 700;
             cursor: pointer;
             display: flex;
@@ -353,8 +353,8 @@
             width: 0.8em;
             height: 0.8em;
             margin-left: 0.5em;
-            border-right: 2px solid #99d98c;
-            border-bottom: 2px solid #99d98c;
+            border-right: 2px solid #0096C7;
+            border-bottom: 2px solid #0096C7;
             transform: rotate(45deg);
             transition: transform 0.3s ease;
         }
@@ -393,7 +393,7 @@
         }
 
         .comparison-table .check {
-            color: #99d98c;
+            color: #0096C7;
             font-size: 1.2em;
         }
 
@@ -502,24 +502,24 @@
     <!-- Nav -->
         <nav id="nav">
             <ul>
-                <li><a href="/">Home</a></li>
+                <li><a href="/" data-link="home">Home</a></li>
                 <li>
-                    <a href="about">About Us</a>
+                    <a href="about" data-link="about">About Us</a>
                     <ul>
-                        <li><a href="visionmission">Vision & Mission</a></li>
-                        <li><a href="corevalues">Core Values</a></li>
-                        <li><a href="decisionmaking">Decision Making</a></li>
-                        <li><a href="ourstory">Our Story</a></li>
+                        <li><a href="visionmission" data-link="vision-mission">Vision & Mission</a></li>
+                        <li><a href="corevalues" data-link="core-values">Core Values</a></li>
+                        <li><a href="decisionmaking" data-link="decision-making">Decision Making</a></li>
+                        <li><a href="ourstory" data-link="our-story">Our Story</a></li>
                     </ul>
                 </li>
-                <li><a href="services">Services</a></li>
-                <li class="current"><a href="pricing">Pricing</a></li>
-                <li><a href="faq">FAQ</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="services" data-link="services">Services</a></li>
+                <li class="current"><a href="pricing" data-link="pricing">Pricing</a></li>
+                <li><a href="faq" data-link="faq">FAQ</a></li>
+                <li><a href="contact" data-link="contact">Contact</a></li>
 
                 <!-- Button wrapped in a list item -->
                     <li class="button-container">
-                        <a href="https://app.occuhelp.com" class="button scrolly" target="_blank">Login</a>
+                        <a href="https://app.occuhelp.com" data-link="login" class="button scrolly" target="_blank">Login</a>
                     </li>
             </ul>
         </nav>
@@ -590,7 +590,7 @@
                                                     </div>
                                                     <div class="bill-layout monthly-bill">
                                                         <div class="bill-row">
-                                                            <div class="bill-label">Minimum Bill:</div>
+                                                            <div class="bill-label">Monthly Bill:</div>
                                                             <div class="bill-value" id="monthly-price">$0</div>
                                                         </div>
                                                     </div>
@@ -834,9 +834,10 @@
         </section>
 
     <!-- Copyright -->
+        <!-- The placeholder text below will be replaced by the JavaScript in copyright.js when the page loads -->
         <div id="copyright">
             <ul class="menu">
-                <li>&copy; <script>document.write(new Date().getFullYear());</script> OccuHelp. All rights reserved.</li>
+                <li class="copyright-container">© 2023 OccuHelp. All rights reserved.</li>
             </ul>
         </div>
 
@@ -851,6 +852,8 @@
     <script src="assets/js/consent.js"></script>
     <script src="assets/js/price-calculator.js"></script>
     <script src="assets/js/pricing.js"></script>
+    <script src="assets/js/copyright.js"></script>
+    <script src="assets/js/external-links.js"></script>
 
 
     </div>

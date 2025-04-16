@@ -8,7 +8,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #f0f5f0;
+    background-color: #EBF4FA;
     background-image: url("images/overlay.png");
     color: #6b7770;
     padding: 1em;
@@ -16,7 +16,7 @@
     z-index: 10000;
     font-family: 'Open Sans', sans-serif;
     display: none;
-    border-top: solid 4px #99d98c;
+    border-top: solid 4px #023E8A;
 }
 
 #cookie-consent-banner .container {
@@ -62,7 +62,7 @@
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    background: #99d98c;
+    background: #023E8A;
     color: #ffffff;
     border: 0;
     line-height: 1em;
@@ -76,15 +76,15 @@
 }
 
 #cookie-consent-banner .button:hover {
-    background: #c1edbb;
+    background: #0077B6;
 }
 
 #cookie-consent-banner .button.alt {
-    background: #c1cac5;
+    background: #B8E0FF;
 }
 
 #cookie-consent-banner .button.alt:hover {
-    background: #ccd5d0;
+    background: #CCE8FC;
 }
 
 /* Responsive adjustments */

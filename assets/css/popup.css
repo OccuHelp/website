@@ -1,0 +1,147 @@
+/**
+ * Popup/Dialog Box Styles
+ * For displaying feature information in a modal popup
+ */
+
+/* Overlay background */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+.popup-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+
+/* Popup container */
+.popup-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    transform: scale(0.9);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.popup-overlay.active .popup-container {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Close button */
+.popup-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background: #023E8A;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border: none;
+    z-index: 2;
+    padding: 0; /* Remove any padding that might affect the shape */
+    box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
+    font-size: 0; /* Remove any font-size influence */
+}
+
+.popup-close::before {
+    content: '×'; /* Use a different X character that centers better */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px; /* Explicit font size */
+    line-height: 1;
+    font-weight: normal;
+    font-family: Arial, sans-serif; /* Use a standard font */
+}
+
+.popup-close:hover {
+    background: #0077B6;
+}
+
+/* Popup content */
+.popup-content {
+    padding: 2em;
+}
+
+.popup-header {
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.popup-header h3 {
+    color: #023E8A;
+    margin: 0 0 0.5em 0;
+    font-size: 1.8em;
+}
+
+.popup-image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    display: block;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.popup-body p {
+    margin: 0 0 1em 0;
+    line-height: 1.6;
+}
+
+/* Animation for popup */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.popup-content {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Prevent body scrolling when popup is open */
+body.popup-open {
+    overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 736px) {
+    .popup-container {
+        width: 95%;
+    }
+
+    .popup-content {
+        padding: 1.5em;
+    }
+
+    .popup-header h3 {
+        font-size: 1.5em;
+    }
+}

@@ -145,7 +145,7 @@ input, select, textarea {
 	}
 
 	a {
-		color: #006376;
+		color: #0077B6;
 		text-decoration: underline;
 	}
 
@@ -209,7 +209,7 @@ input, select, textarea {
 		font-family: 'Open Sans Condensed', sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
-		color: #c1cac5;
+		color: #979DAC;
 	}
 
 /* Container */
@@ -1792,7 +1792,7 @@ input, select, textarea {
 		font-weight: 700;
 		text-transform: uppercase;
 		text-decoration: none;
-		background: #99d98c;
+		background: #023E8A;
 		color: #ffffff;
 		border: 0;
 		line-height: 1em;
@@ -1814,7 +1814,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #c1edbb;
+			background: #0077B6;
 		}
 
 		input[type="button"]:active,
@@ -1822,7 +1822,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background: #a1cd9b;
+			background: #03045E;
 		}
 
 		input[type="button"].alt,
@@ -1830,7 +1830,7 @@ input, select, textarea {
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background: #c1cac5;
+			background: #B8E0FF;
 		}
 
 			input[type="button"].alt:hover,
@@ -1838,7 +1838,7 @@ input, select, textarea {
 			input[type="reset"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background: #ccd5d0;
+				background: #CCE8FC;
 			}
 
 			input[type="button"].alt:active,
@@ -1947,7 +1947,7 @@ input, select, textarea {
 				height: 48px;
 				border-radius: 6px;
 				outline: 0;
-				background: #c1cac5;
+				background: #B8E0FF;
 				text-align: center;
 			}
 
@@ -2022,7 +2022,7 @@ input, select, textarea {
 					transition: background-color .2s ease-in-out;
 					display: block;
 					text-align: center;
-					background: #c1cac5;
+					background: #0096C7;
 					border-radius: 100%;
 					width: 2.25em;
 					height: 2.25em;
@@ -2036,7 +2036,7 @@ input, select, textarea {
 			}
 
 				ul.special li:hover a:before {
-					background: #b9d2ce;
+					background: #00B4D8;
 				}
 
 /* Meta */
@@ -2118,7 +2118,7 @@ input, select, textarea {
 		form input[type="password"]:focus,
 		form select:focus,
 		form textarea:focus {
-			border-color: #a1cd9b;
+			border-color: #0077B6;
 		}
 
 	form input[type="text"],
@@ -2402,17 +2402,17 @@ input, select, textarea {
 			}
 
 			#nav li:hover a, #nav li:hover span {
-				background: #C1CAC5;
+				background: #0077B6;
 				color: #fff;
 			}
 
 			#nav li.active a, #nav li.active span {
-				background: #C1CAC5;
+				background: #023E8A;
 				color: #fff;
 			}
 
 			#nav li.current a {
-				background: #99d98c;
+				background: #023E8A;
 				color: #fff;
 			}
 
@@ -2446,12 +2446,12 @@ input, select, textarea {
 
 			.dropotron li:hover > a, .dropotron li:hover > span {
 				color: #fff;
-				background: #99d98c;
+				background: #0077B6;
 			}
 
 			.dropotron li.active > a, .dropotron li.active > span {
 				color: #fff;
-				background: #99d98c;
+				background: #023E8A;
 			}
 
 			.dropotron li:first-child {
@@ -2540,8 +2540,8 @@ input, select, textarea {
 
 	#main {
 		background: #fff;
-		border-top: solid 5px #b1ddab;
-		border-bottom: solid 5px #c1cac5;
+		border-top: solid 5px #0096C7;
+		border-bottom: solid 5px #979DAC;
 		border-top-width: 35px;
 		border-bottom-width: 10px;
 		padding: 6em 0 6em 0;
@@ -2811,7 +2811,7 @@ input, select, textarea {
 						position: absolute;
 						left: 0;
 						top: 0;
-						background: #b1ddab;
+						background: #48CAE4;
 						width: 44px;
 						height: 44px;
 						content: '\f0c9';
@@ -2822,7 +2822,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:active:before {
-						background-color: #a1cd9b;
+						background-color: #0077B6;
 					}
 
 			#navPanel {

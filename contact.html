@@ -74,24 +74,24 @@
 	<!-- Nav -->
 		<nav id="nav">
 			<ul>
-				<li><a href="/">Home</a></li>
+				<li><a href="/" data-link="home">Home</a></li>
 				<li>
-					<a href="about">About Us</a>
+					<a href="about" data-link="about">About Us</a>
 					<ul>
-						<li><a href="visionmission">Vision & Mission</a></li>
-						<li><a href="corevalues">Core Values</a></li>
-						<li><a href="decisionmaking">Decision Making</a></li>
-						<li><a href="ourstory">Our Story</a></li>
+						<li><a href="visionmission" data-link="vision-mission">Vision & Mission</a></li>
+						<li><a href="corevalues" data-link="core-values">Core Values</a></li>
+						<li><a href="decisionmaking" data-link="decision-making">Decision Making</a></li>
+						<li><a href="ourstory" data-link="our-story">Our Story</a></li>
 					</ul>
 				</li>
-				<li><a href="services">Services</a></li>
-				<li><a href="pricing">Pricing</a></li>
-				<li><a href="faq">FAQ</a></li>
-				<li class="current"><a href="contact">Contact</a></li>
+				<li><a href="services" data-link="services">Services</a></li>
+				<li><a href="pricing" data-link="pricing">Pricing</a></li>
+				<li><a href="faq" data-link="faq">FAQ</a></li>
+				<li class="current"><a href="contact" data-link="contact">Contact</a></li>
 
 				<!-- Button wrapped in a list item -->
 					<li class="button-container">
-						<a href="https://app.occuhelp.com" class="button scrolly" target="_blank">Login</a>
+						<a href="https://app.occuhelp.com" data-link="login" class="button scrolly" target="_blank">Login</a>
 					</li>
 			</ul>
 		</nav>
@@ -206,7 +206,7 @@
 										</div>
 									</div>
 									<div class="col-6 col-12-small">
-										<div class="form-group">
+										<div class="form-group required">
 											<label for="phone">Phone</label>
 											<input type="tel" id="phone" name="phone" placeholder="Your phone number">
 										</div>
@@ -217,11 +217,57 @@
 											<select id="subject" name="subject">
 												<option value="">Select a subject</option>
 												<option value="general">General Inquiry</option>
-												<option value="sales">Sales Information</option>
-												<option value="support">Technical Support</option>
+												<option value="sales">Sales Inquiry</option>
+												<option value="support">Technical Question</option>
 												<option value="demo">Request a Demo</option>
 												<option value="other">Other</option>
 											</select>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="checkbox-group">
+											<span class="checkbox-group-label">Preferred Contact Method</span>
+											<div class="checkbox-options">
+												<div class="checkbox-option">
+													<input type="checkbox" id="contact-email" name="contact_method[]" value="email" onclick="this.blur();" checked>
+													<label for="contact-email">Email</label>
+												</div>
+												<div class="checkbox-option">
+													<input type="checkbox" id="contact-call" name="contact_method[]" value="call" onclick="this.blur();" checked>
+													<label for="contact-call">Call</label>
+												</div>
+												<div class="checkbox-option">
+													<input type="checkbox" id="contact-text" name="contact_method[]" value="text" onclick="this.blur();" checked>
+													<label for="contact-text">Text</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="checkbox-group">
+											<span class="checkbox-group-label">Preferred Contact Time</span>
+											<div class="checkbox-options">
+												<div class="checkbox-option">
+													<input type="checkbox" id="time-early-morning" name="contact_time[]" value="early-morning" onclick="this.blur();" checked>
+													<label for="time-early-morning">Early Morning</label>
+												</div>
+												<div class="checkbox-option">
+													<input type="checkbox" id="time-mid-morning" name="contact_time[]" value="mid-morning" onclick="this.blur();" checked>
+													<label for="time-mid-morning">Mid Morning</label>
+												</div>
+												<div class="checkbox-option">
+													<input type="checkbox" id="time-lunch" name="contact_time[]" value="lunch" onclick="this.blur();" checked>
+													<label for="time-lunch">Lunch</label>
+												</div>
+												<div class="checkbox-option">
+													<input type="checkbox" id="time-early-afternoon" name="contact_time[]" value="early-afternoon" onclick="this.blur();" checked>
+													<label for="time-early-afternoon">Early Afternoon</label>
+												</div>
+												<div class="checkbox-option">
+													<input type="checkbox" id="time-late-afternoon" name="contact_time[]" value="late-afternoon" onclick="this.blur();" checked>
+													<label for="time-late-afternoon">Late Afternoon</label>
+												</div>
+											</div>
 										</div>
 									</div>
 									<div class="col-12">
@@ -244,9 +290,10 @@
 		</section>
 
 	<!-- Copyright -->
+		<!-- The placeholder text below will be replaced by the JavaScript in copyright.js when the page loads -->
 		<div id="copyright">
 			<ul class="menu">
-				<li>&copy; <script>document.write(new Date().getFullYear());</script> OccuHelp. All rights reserved.</li>
+				<li class="copyright-container">© 2023 OccuHelp. All rights reserved.</li>
 			</ul>
 		</div>
 
@@ -262,6 +309,9 @@
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/consent.js"></script>
 	<script src="assets/js/contact-form.js"></script>
+	<script src="assets/js/copyright.js"></script>
+	<script src="assets/js/checkbox-enhance.js"></script>
+	<script src="assets/js/external-links.js"></script>
 
 </body>
 </html>

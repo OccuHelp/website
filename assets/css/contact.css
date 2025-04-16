@@ -21,7 +21,7 @@
     left: 0;
     width: 50px;
     height: 3px;
-    background-color: #99d98c;
+    background-color: #023E8A;
 }
 
 .contact-info {
@@ -50,7 +50,7 @@
 .contact-icon {
     flex: 0 0 40px;
     height: 40px;
-    background-color: #99d98c;
+    background-color: #023E8A;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -108,14 +108,55 @@
     font-family: inherit;
     font-size: 1em;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Ensure consistent height for text inputs and select */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+    height: 2.75em;
+    line-height: 1.25;
+}
+
+/* Custom styling for select dropdown */
+.form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%236b7770' viewBox='0 0 16 16'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) center;
+    padding: 0 35px 0 0.75em; /* Right padding for arrow, left padding for text */
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 2.75em; /* Fixed height to match other inputs */
+    line-height: 2.75em; /* Match line-height to height for perfect vertical centering */
+}
+
+/* For IE and Edge */
+.form-group select::-ms-expand {
+    display: none;
+}
+
+/* Style for disabled select */
+.form-group select:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    background-color: #f2f2f2;
 }
 
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
-    border-color: #99d98c;
-    box-shadow: 0 0 0 3px rgba(153, 217, 140, 0.2);
+    border-color: #0096C7;
+    box-shadow: 0 0 0 3px rgba(0, 150, 199, 0.2);
     outline: none;
+}
+
+/* Ensure the arrow remains visible when focused */
+.form-group select:focus {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%230096C7' viewBox='0 0 16 16'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>");
 }
 
 .form-group textarea {
@@ -129,12 +170,69 @@
     margin-left: 0.25em;
 }
 
+/* Checkbox group styling */
+.checkbox-group {
+    margin-bottom: 1.5em;
+}
+
+.checkbox-group-label {
+    display: block;
+    margin-bottom: 0.75em;
+    color: #6b7770;
+    font-weight: 600;
+}
+
+.checkbox-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em 1.5em;
+}
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+}
+
+.checkbox-option input[type="checkbox"] {
+    margin-right: 0.5em;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    accent-color: #023E8A;
+    appearance: auto; /* Ensure native checkbox appearance */
+    -webkit-appearance: checkbox; /* For Safari */
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    position: relative;
+    vertical-align: middle;
+}
+
+/* Ensure proper checked state styling */
+.checkbox-option input[type="checkbox"]:checked {
+    background-color: #023E8A;
+    border-color: #023E8A;
+}
+
+/* Add focus state */
+.checkbox-option input[type="checkbox"]:focus {
+    outline: 2px solid rgba(2, 62, 138, 0.3);
+    outline-offset: 1px;
+}
+
+.checkbox-option label {
+    margin-bottom: 0;
+    cursor: pointer;
+    font-weight: normal;
+}
+
 .form-actions {
     text-align: right;
 }
 
 .form-actions button {
-    background-color: #99d98c;
+    background-color: #023E8A;
     color: white;
     border: none;
     padding: 0.75em 1.5em;
@@ -145,7 +243,7 @@
 }
 
 .form-actions button:hover {
-    background-color: #7bc86c;
+    background-color: #0077B6;
 }
 
 .form-actions button:disabled {
@@ -161,9 +259,9 @@
 }
 
 .form-message.success {
-    background-color: #d4edda;
+    background-color: #CAF0F8;
     color: #155724;
-    border: 1px solid #c3e6cb;
+    border: 1px solid #90E0EF;
 }
 
 .form-message.error {
@@ -204,7 +302,7 @@
 .social-icon {
     width: 40px;
     height: 40px;
-    background-color: #f0f5f0;
+    background-color: #EBF4FA;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -215,7 +313,7 @@
 }
 
 .social-icon:hover {
-    background-color: #99d98c;
+    background-color: #023E8A;
     color: white;
 }
 
@@ -224,11 +322,11 @@
     .contact-info, .contact-form {
         padding: 1.5em;
     }
-    
+
     .contact-detail {
         flex-direction: column;
     }
-    
+
     .contact-icon {
         margin-bottom: 1em;
     }

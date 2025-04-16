@@ -2,7 +2,7 @@
 
 /* Highlight text */
 .highlight {
-    color: #99d98c;
+    color: #023E8A;
     font-weight: bold;
 }
 
@@ -26,13 +26,13 @@ ul.check-list li:before {
     position: absolute;
     left: 0;
     top: 0.25em;
-    color: #99d98c;
+    color: #0096C7;
 }
 
 /* CTA Box */
 .cta-box {
-    background-color: #f0f5f0;
-    border-left: 4px solid #99d98c;
+    background-color: #EBF4FA;
+    border-left: 4px solid #023E8A;
     padding: 2em;
     margin: 2em 0;
     border-radius: 0.5em;
@@ -55,7 +55,7 @@ ul.check-list li:before {
 }
 
 .box.testimonial blockquote {
-    border-left: 3px solid #99d98c;
+    border-left: 3px solid #023E8A;
     padding-left: 1em;
     margin: 0 0 1em 0;
     font-style: italic;
@@ -71,7 +71,7 @@ ul.check-list li:before {
 /* Highlight boxes in sidebar */
 .box.highlight {
     padding: 1.5em;
-    background-color: #f0f5f0;
+    background-color: #EBF4FA;
     margin-bottom: 1.5em;
 }
 
@@ -84,7 +84,7 @@ ul.check-list li:before {
 
 .box.highlight h3:before {
     margin-right: 0.5em;
-    color: #99d98c;
+    color: #0096C7;
 }
 
 /* Responsive adjustments */
@@ -92,8 +92,8 @@ ul.check-list li:before {
     .cta-box {
         padding: 1.5em;
     }
-    
-    .box.testimonial, 
+
+    .box.testimonial,
     .box.highlight {
         padding: 1.25em;
     }
