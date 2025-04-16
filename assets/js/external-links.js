@@ -19,18 +19,18 @@ document.addEventListener('DOMContentLoaded', function() {
         "instagram": "#",
 
         // Navigation Links
-        "home": "index.html",
-        "about": "about.html",
-        "services": "services.html",
-        "pricing": "pricing.html",
-        "contact": "contact.html",
-        "faq": "faq.html",
+        "home": "/",
+        "about": "about",
+        "services": "services",
+        "pricing": "pricing",
+        "contact": "contact",
+        "faq": "faq",
 
         // About Section Links
-        "our-story": "ourstory.html",
-        "vision-mission": "visionmission.html",
-        "core-values": "corevalues.html",
-        "decision-making": "decisionmaking.html",
+        "our-story": "ourstory",
+        "vision-mission": "visionmission",
+        "core-values": "corevalues",
+        "decision-making": "decisionmaking",
 
         // External Resources
         "blog": "#",
