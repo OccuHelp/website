@@ -119,4 +119,20 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://www.occuhelp.com/privacy</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- Terms of Service -->
+  <url>
+    <loc>https://www.occuhelp.com/termsofservice</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
 </urlset>
